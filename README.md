@@ -1,21 +1,16 @@
-## Welcome to GitHub Pages
+## Welcome to Machine Learning
 
-### Markdown
+### Exercise Summaries
 
 ```markdown
-Syntax highlighted code block
+# Exercise 1
+## Working with Tensorflow
 
-# Header 1
-## Header 2
-### Header 3
+Today, I worked with Tensorflow to create a simplified neural network containing one neuron within one layer.
+I then used this network to create a model representing the relationship between two different lists of numbers, with epochs=500.
+From my understanding, epochs is a setting that tells the computer how many times to look through the training data to create its best "guess" for a corresponding model.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
+After running the code, I thought it was neat to see how the loss function kept being minimized after each epoch, as the computer got closer and closer to the best-matching model.
 
 ### Support or Contact
 
