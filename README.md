@@ -1,14 +1,11 @@
 ## Welcome to Machine Learning
 
-### Exercise Summaries
+# Exercise Summaries
 
-```markdown
-# Exercise 1
-## Working with Tensorflow
+## Exercise 1
+### Working with Tensorflow
 
-Today, I worked with Tensorflow to create a simplified neural network containing one neuron within one layer.
-I then used this network to create a model representing the relationship between two different lists of numbers, with epochs=500.
-From my understanding, epochs is a setting that tells the computer how many times to look through the training data to create its best "guess" for a corresponding model.
+Today, I worked with Tensorflow to create a relatively "simple" neural network consisting of one neuron within one layer.  I then used this network to create a model representing the relationship between two different lists of numbers, with epochs=500.  From my understanding, "epochs" is a setting that tells the computer how many times to look through the training data to create its best "guess" for a corresponding model.
 
 After running the code, I thought it was neat to see how the loss function kept being minimized after each epoch, as the computer got closer and closer to the best-matching model.
 
