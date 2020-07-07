@@ -1,7 +1,7 @@
 ## Welcome to Machine Learning
 
 # Exercise Response Index
-1. Saved in Code repository as July7.py; [July 7](https://csstarfish.github.io/Machine-Learning/July7Response)
+1. Saved in Code repository as July7.py; [Response for July 7](https://csstarfish.github.io/Machine-Learning/July7Response)
 
 
 ## Practice Along With Video Lecture #1 - 7/6/20
