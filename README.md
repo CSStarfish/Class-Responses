@@ -4,6 +4,14 @@
 1. Saved in Code repository as July7.py; [Response for July 7](https://csstarfish.github.io/Machine-Learning/July7Response)
 2. Saved in Code repository as July8.py; [Response for July 8](https://csstarfish.github.io/Machine-Learning/July8Response)
 
+
+
+
+
+
+
+
+
 ## Practice Along With Video Lecture #1 - 7/6/20
 ### Working with Tensorflow
 
