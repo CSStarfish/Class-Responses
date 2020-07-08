@@ -1,9 +1,9 @@
 ## Welcome to Machine Learning
 
 # Exercise Response Index
-1. Saved in Code repository as July7.py; [Response for July 7](https://csstarfish.github.io/Machine-Learning/July7Response)
-2. Saved in Code repository as July8.py; [Response for July 8](https://csstarfish.github.io/Machine-Learning/July8Response)
-
+1. [July 7, Response](https://csstarfish.github.io/Machine-Learning/July7Response)
+2. [July 8, Response](https://csstarfish.github.io/Machine-Learning/July8Response)
+3. [July 9, Response] (link will be updated soon)
 
 
 
