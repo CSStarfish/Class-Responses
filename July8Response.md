@@ -10,11 +10,11 @@
 
 *  In this particular neural network, the loss function is set to "sparse_categorical-crossentropy" to determine the cross entropy loss between the correct classification labels and the predicted classification labels, where the labels are integers.  Cross entropy loss is also known as log loss, and it seeks to minimize the difference between the probability of the actual classification label and the probability of the predicted classification label being equal to the actual classification label. (Finish this question.)
 
-**D. Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.**
+**D. Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions:**
 
-    1. What is the shape of the images training set (how many and the dimension of each)?
-    2. What is the length of the labels training set?
-    3. What is the shape of the images test set?
-    4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).
-    5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.
-    6. Produce the following plot for your randomly selected image from the test dataset:
+   **1. What is the shape of the images training set (how many and the dimension of each)?**
+   **2. What is the length of the labels training set?**
+   **3. What is the shape of the images test set?**
+   **4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
+   **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
+   **6. Produce the following plot for your randomly selected image from the test dataset:**
