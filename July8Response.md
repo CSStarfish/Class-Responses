@@ -12,14 +12,14 @@
 
 **D. Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions:**
 
-   1. What is the shape of the images training set (how many and the dimension of each)?
+ **1. What is the shape of the images training set (how many and the dimension of each)?**
    
-   2. What is the length of the labels training set?
+ **2. What is the length of the labels training set?**
    
-   3. What is the shape of the images test set?
+ **3. What is the shape of the images test set?**
    
-   4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).
+ **4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
    
-   5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.
+ **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
    
-   6. Produce the following plot for your randomly selected image from the test dataset:
+ **6. Produce the following plot for your randomly selected image from the test dataset:**
