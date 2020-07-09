@@ -34,6 +34,6 @@
     
     
  **6. Produce the following plot for your randomly selected image from the test dataset:**
-    I have attached a plot depicting the first test image alongside it's probability distribution below.
+    I have attached a plot depicting the first test image alongside it's probability distribution below.  Interestingly, the model was so confident in its prediction that the first test image depicted a 7 that the remaining probabilities don't even appear on the graph.
     
    ![](Probability7.png)
