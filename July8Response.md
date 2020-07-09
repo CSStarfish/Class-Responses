@@ -27,13 +27,13 @@
     I calculated an array of classification label probabilities for all test images, which can be seen on lines 44 and 46 in the corresponding "July8.py" file from my code repository.  To give an example, I decided to randomly select the first test image to practice predicting its digit classifcation label.  The digit classification label probabilites for the first test image's prediction were the following: [ 1.7913088e-07, 1.6292073e-08, 3.4559532e-06, 2.6658881e-05, 2.8856678e-12, 2.8279874e-08, 9.9518761e-12, 9.9996901e-01, 1.5789774e-07, 4.9453018e-07 ].  The numbers in this list depict the probability that the digit in the first test image is a 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9, respectively.
    
  **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
-    Using the np.argmax() function on the first test image, the numeral/digit with the highest probability for this image is a 7.  The image's corresponding test label confirms that the first test image does, indeed, depict a 7.  For reference, I have attached a plot of the first test image below.
+    Using the np.argmax() function on the first test image, the numeral/digit with the highest probability for this image is a 7.  The image's corresponding test label confirms that the first test image does, indeed, depict a 7.  For reference, I have attached a plot of the first test image, below.
     
     
    ![](Number7.png)    
     
     
  **6. Produce the following plot for your randomly selected image from the test dataset:**
-    I have attached a plot depicting the first test image alongside it's probability distribution below.  Interestingly, the model was so confident in its prediction that the first test image depicted a 7 that the remaining probabilities don't even appear on the graph.
+    I have attached a plot depicting the first test image alongside it's probability distribution, below.  Interestingly, the model was so confident in its prediction that the first test image depicted a 7 that the remaining probabilities don't even appear on the graph.
     
    ![](Probability7.png)
