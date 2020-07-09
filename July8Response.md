@@ -30,10 +30,10 @@
     Using the np.argmax() function on the first test image, the numeral/digit with the highest probability for this image is a 7.  The image's corresponding test label confirms that the first test image does, indeed, depict a 7.  For reference, I have attached a plot of the first test image below.
     
     
-    ![](Number7.png)    
+   ![](Number7.png)    
     
     
  **6. Produce the following plot for your randomly selected image from the test dataset:**
     I have attached a plot depicting the first test image alongside it's probability distribution below.
     
-    ![](Probability7.png)
+   ![](Probability7.png)
