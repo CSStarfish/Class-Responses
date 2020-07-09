@@ -15,10 +15,13 @@
 **D. Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions:**
 
  **1. What is the shape of the images training set (how many and the dimension of each)?**
+    I calculated the length of the images training set and determined that there are 60,000 images in the set, with a dimensionality of 28x28 pixels.
    
  **2. What is the length of the labels training set?**
+    I calculated the length of the labels training set and determined that there are 60,000 labels in the set.  The label training set's length is the same as the length of the images training set because there is only one label that correctly classifies each image.
    
  **3. What is the shape of the images test set?**
+    I calculated the length of the images test set and determined that there are 10,000 images in the set, with a dimensionality of 28x28 pixels.
    
  **4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
    
