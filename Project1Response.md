@@ -7,4 +7,10 @@ For this week's project, I implemented a social distance detector with two diffe
 **3. What limitations or improvements might you include in order to improve your proposed design?**
 
 
-After accomplishing this task, I also decided to implement a mask detector.
+After accomplishing this task, I also decided to implement a mask detector using an image that depicts a man, who is wearing a mask, walking with another man who is not wearing a mask.
+
+![](people-wearing-not-wearing-masks.jpg]
+
+![](masks_detected.PNG)
+
+**Do you think implementing a face mask detector could add value to a social distancing detector?**
