@@ -4,7 +4,7 @@
 1. [July 7, Response](https://csstarfish.github.io/Machine-Learning/July7Response)
 2. [July 8, Response](https://csstarfish.github.io/Machine-Learning/July8Response)
 3. [July 9, Response](https://csstarfish.github.io/Machine-Learning/July9Response)
-4. [Project 1, Response](https://csstarfish.github.io/Machine-Learning/Project1Response )
+4. [Project 1, Response](https://csstarfish.github.io/Machine-Learning/Project1Response)
 
 
 
