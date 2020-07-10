@@ -9,8 +9,6 @@ For this week's project, I implemented a social distance detector with two diffe
 
 After accomplishing this task, I also decided to implement a mask detector using an image that depicts a man, who is wearing a mask, walking with another man who is not wearing a mask.
 
-![](people-wearing-not-wearing-masks.jpg]
-
-![](masks_detected.PNG)
+![](masks.jpg) ![](masks_detected.PNG)
 
 **Do you think implementing a face mask detector could add value to a social distancing detector?**
