@@ -2,6 +2,10 @@
 
 **2. What are the optimizer and loss functions?  How good was your “text classification of movie reviews” model?**
 
-**3. In “text classification with preprocessed text” you produced a graph of training and validation loss.  Add the graph to this response and provide a brief explanation.4.Likewise do the same for the training and validation accuracy graph.**
+**3. In “text classification with preprocessed text” you produced a graph of training and validation loss.  Add the graph to this response and provide a brief explanation.**
 
-![](loss.png) ![](accuracy.png)
+![](loss.png)
+
+**4.Likewise do the same for the training and validation accuracy graph.**
+
+![](accuracy.png)
