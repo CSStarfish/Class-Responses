@@ -26,9 +26,9 @@
 
    *Shortly after this initial error, while the mask was still being placed on his face, another error in the detector's prediction occurred.  Similar to the first error, the detector likely falsely predicted he was not wearing a mask because it was still stretched out and did not yet conform to the shape of his face.  This time, however, the face mask detector was less sure of its prediction that he was not wearing a mask, at only about 56% confidence.*  
 
-*I have attached both the input and output videos below.  They are saved in the repository as wearing_mask.mp4 and Wearing_mask_output.avi, respectively.*  
+*I have attached both the input and output videos below.  They are saved in the repository as wearing_mask.mp4 and wearing_mask_output.avi, respectively.*  
 
 [![Putting on Face Mask](http://img.youtube.com/vi/ipPDy4PzxPw/0.jpg)](https://www.youtube.com/watch?v=ipPDy4PzxPw)
-[![Putting on Face Mask Output](http://img.youtube.com/vi/55F0QrmVgkM/0.jpg)](https://www.youtube.com/watch?v=55F0QrmVgkM)
+[![Putting on Face Mask Output](http://img.youtube.com/vi/55F0QrmVgkM/0.jpg)](https://youtu.be/watch?v=55F0QrmVgkM)
 
 **Do you think implementing a face mask detector could add value to a social distancing detector?**
