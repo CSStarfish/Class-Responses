@@ -5,7 +5,7 @@
 2. [July 8, Response](https://csstarfish.github.io/Machine-Learning/July8Response)
 3. [July 9, Response](https://csstarfish.github.io/Machine-Learning/July9Response)
 4. [Project 1, Response](https://csstarfish.github.io/Machine-Learning/Project1Response)
-
+5. [Extra Credit 1 (July 10), Response](https://csstarfish.github.io/Machine-Learning/ExtraCreditResponse)
 
 
 
