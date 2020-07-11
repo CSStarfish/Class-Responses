@@ -1,4 +1,4 @@
-For this week's project, I implemented a social distance detector with two different videos - one taken from a bird's eye view and one taken from the horizon.  Due to the large video sizes, the videos have trouble rendering on this page, but the output corresponding to the bird's eye view is saved as my_output.avi and the output for the horizon angle is saved as my_second_output.avi in the repository.
+For this week's project, I implemented a social distance detector with two different videos - one taken from a bird's eye view and one taken from the horizon.  Due to the large video sizes, the videos have trouble rendering on this page, but the output corresponding to the bird's eye view is saved as my_output.mp4 and the output for the horizon angle is saved as my_second_output.avi in the repository.
 
 ![](my_output.mp4)
 
