@@ -28,7 +28,9 @@ I calculated the length of the images test set and determined that there are 10,
    
  **4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
     
-I calculated an array of classification label probabilities for all test images, which can be seen on lines 44 and 46 in the corresponding "July8.py" file from my code repository.  To give an example, I decided to randomly select the first test image to practice predicting its digit classifcation label.  The digit classification label probabilites for the first test image's prediction are the following: [ 1.7913088e-07, 1.6292073e-08, 3.4559532e-06, 2.6658881e-05, 2.8856678e-12, 2.8279874e-08, 9.9518761e-12, 9.9996901e-01, 1.5789774e-07, 4.9453018e-07 ].  The numbers in this list depict the probability that the digit in the first test image is a 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9, respectively.
+I calculated an array of classification label probabilities for all test images, which can be seen on lines 44 and 46 in the corresponding "July8.py" file from my code repository.  
+
+To give an example, I decided to randomly select the first test image to practice predicting its digit classifcation label.  The digit classification label probabilites for the first test image's prediction are the following: [ 1.7913088e-07, 1.6292073e-08, 3.4559532e-06, 2.6658881e-05, 2.8856678e-12, 2.8279874e-08, 9.9518761e-12, 9.9996901e-01, 1.5789774e-07, 4.9453018e-07 ].  The numbers in this list depict the probability that the digit in the first test image is a 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9, respectively.
    
  **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
     
