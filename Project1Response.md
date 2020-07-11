@@ -8,7 +8,9 @@ For this week's project, I implemented a social distance detector with two diffe
 
 
 After accomplishing this task, I also decided to implement a mask detector using the image below.  The detector very confidently assessed that the man to right is not wearing a mask - in fact, it predicted with 100% confidence that there wasn't a mask on his face.  The detector was also very confident in its prediction that the man to the left is wearing a mask.  However, it was approximately 2.67% less confident in this prediction than in its prediction for the man to the right.  Perhaps this slight decrease in confidence is due to the fact that the man on the left's mask is slightly crooked and is not fully covering his nose.  Another direction to take with this face mask detector would be to adjust for different positions of the mask and to be able to detect masks on people outside of the foreground of the images provided.
+
 ![](mask.jpg)  ![](mask_detected.PNG)
+
 
 I then decided to implement the face mask detector with a video stream.  I provided the detector with a video of a man putting on a face mask as input and it was mostly accurate in its predictions - both when the man was and wasn't wearing a mask.  In fact, it was completely accurate when the man had not yet put on a face mask at the beginning of the video, and also when the man had finished putting on a face mask at the end of the video.  The mask detector was approximately 98% confident in its prediction that the man wasn't wearing a mask in the beginning, and around 96% confident in its prediction that he was wearing a mask at the end of the video.  
 
