@@ -1,4 +1,4 @@
-#July 10th Data Science Alumni Speaker - Extra Credit
+# July 10th Data Science Alumni Speaker - Extra Credit
 	
   On Friday, July 10, I attended the third Data Science alumni speaker series about Tommy Jones from in-Q-Tel.  in-Q-Tel is a firm that invests in startups, so Tommy examines the startups’ technology and determines how valuable they may be to the intelligence community.  He also volunteers with Data Community DC, which sets up meetups and networking for data science professionals in the area.  As part of Tommy’s Ph.D. research, he also works on developing statistical models for natural language processing (NLP) and open-source R packages.  
   
