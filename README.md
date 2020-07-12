@@ -1,6 +1,6 @@
 ## Welcome to Machine Learning
 
-# Exercise Response Index
+#* Exercise Response Index
 1. [July 7, Response](https://csstarfish.github.io/Machine-Learning/July7Response)
 2. [July 8, Response](https://csstarfish.github.io/Machine-Learning/July8Response)
 3. [July 9, Response](https://csstarfish.github.io/Machine-Learning/July9Response)
@@ -23,3 +23,8 @@ Once I finished working with this example, I ran a similar neural network that a
 ### Working with Tensorflow To Classify Images
 
 Today, I worked with Tensorflow to create a neural network that created a model to classify images of clothing.  In the exercise, I created graphs that displayed the accuracy of the model's predictions.  It was really cool to see how the network was so accurate at predicting clothing items, but it was also interesting to see how the model could be confident in it's classification, even when it was wrong.
+
+## Practice Along With Video Lecture #3 - 7/8/20
+### Working with Tensorflow To Classify Text
+
+Today, I worked with Tensorflow to create a neural network that created a model to classify the text of IMDB moview reviews as either positive or negative.  Similar to yesterday's exercise, I created graphs that displayed the accuracy of the model's predictions.  However, the graphs from today's exercises depicted both the loss and accuracy of the training and testing datasets over time, as opposed to just the final accuracy of the predictions.  It was interesting to be able to find the exact epoch at which the model became overfit to the training data, because you could examine the graphs to see where the training accuracy became greater than the validation accuracy.
