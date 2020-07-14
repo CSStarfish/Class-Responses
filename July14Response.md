@@ -13,7 +13,7 @@
 **B. Another useful method is pooling.**
    **1. Apply a 2x2 filter to one of your convolved images, and plot the result.**  
 
-   **2. In effect what have you accomplished by applying this filter?  
+   **2. In effect what have you accomplished by applying this filter?**  
 
    **3. Can you determine from the code which type of pooling filter is applied, and the method for selecting a pixel value (see the following snippet)?**  
      
@@ -25,7 +25,7 @@
    **5. Stretch goal:  again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.**
 
 
-**C.The lecture for today (Coding with Convolutional Neural Network) compared the application of our previously specified deep neural network with a newly specified convolutional neural network.  Instead of using the fashion_MNIST dataset, use the mnist dataset (the hand written letters) to train and compare your DNN and CNN output.      
+**C.The lecture for today (Coding with Convolutional Neural Network) compared the application of our previously specified deep neural network with a newly specified convolutional neural network.  Instead of using the fashion_MNIST dataset, use the mnist dataset (the hand written letters) to train and compare your DNN and CNN output.**      
 
    **1. Were you able to improve your model by adding the Conv2D and MaxPooling2D layers to your neural network?  Plot the convolutions graphically, include them in your response and describe them.**
 
