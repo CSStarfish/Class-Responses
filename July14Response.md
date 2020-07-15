@@ -9,13 +9,16 @@
 *   The image below depicts the original version of two people ascending the outdoor staircase.
    ![Original](Original.png)
    
-   The next image below depicts the first filter on the image.  I used filter = [ [-1, 0, -2], [0.5, 4.5, -1.5], [1.5, 2, -3]], with weight = 1 because the values in the filter add up to 1.  This filter increased the contrast of the image by brightening lighter colors and further darkening darker colors.  It also sharpened the edges, yielding a much more crisp picture of the staircase. (I will be updating this with more detail on how the image was transformed)
+*   The next image below depicts the first filter on the image.  I used filter = [ [-1, 0, -2], [0.5, 4.5, -1.5], [1.5, 2, -3]], with weight = 1 because the values in the filter add up to 1.  This filter increased the contrast of the image by brightening lighter colors and further darkening darker colors.  It also sharpened the edges, yielding a much more crisp picture of the staircase. (I will be updating this with more detail on how the image was transformed)
+   
    ![First Filter](FirstFilter.png)
    
-   I then applied a second filter to the original image, as shown below.  I used filter = [ [-0.55, 0, -3], [10, 2, -8], [2, 2, -4]], with weight = 2.22 because the values in the filter add up to 0.45.  This filter greatly increased the contrast of the image by heavily brightening lighter colors.  Consequently, the filter effectively converted the image from gray-scale to black-and-white.  Interestingly, this filter also produced wavy lines across the sky.  (I will be updating this with more detail on how the image was transformed)
+*   I then applied a second filter to the original image, as shown below.  I used filter = [ [-0.55, 0, -3], [10, 2, -8], [2, 2, -4]], with weight = 2.22 because the values in the filter add up to 0.45.  This filter greatly increased the contrast of the image by heavily brightening lighter colors.  Consequently, the filter effectively converted the image from gray-scale to black-and-white.  Interestingly, this filter also produced wavy lines across the sky.  (I will be updating this with more detail on how the image was transformed)
+   
    ![Second Filter](SecondFilter.png)
    
-   Lastly, I applied a third filter to the image and attached it below.  This time, I used filter = [ [-5, 5, 0], [0, -2, 3], [1, -20, 25]], with weight = 0.143 because the values in the filter add up to 7.  This filtered image appears quite similar to the original image, as the third filter only slightly sharpened the picture.  The image's contrast was also increased by lightly brightening the lighter colors in the image.  In addition, the edges were sharpened, which is especially apparent in the leaves of the tree toward the bottom of the image.  (I will be updating this with more detail on how the image was transformed)
+*   Lastly, I applied a third filter to the image and attached it below.  This time, I used filter = [ [-5, 5, 0], [0, -2, 3], [1, -20, 25]], with weight = 0.143 because the values in the filter add up to 7.  This filtered image appears quite similar to the original image, as the third filter only slightly sharpened the edges (which is most visible in the leaves of the tree toward the bottom of the image.  The image's contrast was also increased by lightly brightening the lighter colors in the image. (I will be updating this with more detail on how the image was transformed)
+   
    ![Third Filter](ThirdFilter.png)
 
    **3. Why is the application of a convolving filter to an image useful for computer vision?**  
