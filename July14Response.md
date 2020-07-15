@@ -2,7 +2,16 @@
 
    **1. Modify the existing filter and if needed the associated weight in order to apply your new filters to the image 3 times.  Plot each result, upload them to your response, and describe how each filter transformed the existing image as it convolved through the original array and reduced the object size.**  
    
+   ![Original](Original.png)
+   
+   ![First Filter](FirstFilter.png)
+   
+   
    ![Second Filter](SecondFilter.png)
+   
+   
+   ![Third Filter](ThirdFilter.png)
+   
 
    **2. What are you functionally accomplishing as you apply the filter to your original array (see the following snippet for reference)?**  
 
