@@ -15,6 +15,8 @@
 
    **2. What are you functionally accomplishing as you apply the filter to your original array (see the following snippet for reference)?**  
 
+![Snippet 1](July14Snippet1.PNG)
+
    **3. Why is the application of a convolving filter to an image useful for computer vision?**  
 
 
@@ -28,7 +30,7 @@
 
    **3. Can you determine from the code which type of pooling filter is applied, and the method for selecting a pixel value (see the following snippet)?**  
      
-![Snippet](July14Snippet.PNG)
+![Snippet 2](July14Snippet.PNG)
 
    **4. Did the result increase in size or decrease?  Why would this method be useful?**
 
