@@ -23,7 +23,11 @@
   
   ![seaborn Plot](Regression.PNG)
 
-  **2. After running model.fit() on the auto-mpg.data data object, you returned the hist.tail() from the dataset where the training loss, MAE & MSE were recorded as well as those same variables for the validating dataset.  What interpretation can you offer when considering these last 5 observations from the model output?  Does the model continue to improve even during each of these last 5 steps?  Can you include a plot to illustrate your answer?  Stretch goal: include and describe the final plot that illustrates the trend of true values to predicted values as overlayed upon the histogram of prediction error.**
+  **2. After running model.fit() on the auto-mpg.data data object, you returned the hist.tail() from the dataset where the training loss, MAE & MSE were recorded as well as those same variables for the validating dataset.  What interpretation can you offer when considering these last 5 observations from the model output?  Does the model continue to improve even during each of these last 5 steps?  Can you include a plot to illustrate your answer?**  
+  
+  
+  
+  **Stretch goal: include and describe the final plot that illustrates the trend of true values to predicted values as overlayed upon the histogram of prediction error.**
 
 ---
 ---
@@ -31,3 +35,8 @@
 **C. Overfit and Underfit**
 
   **1. What was the significance of comparing the 4 different sized models (tiny, small, medium, large)?  Can you include a plot to illustrate your answer?**
+  
+  *   The different sized models were compared to show the extent of over- and under-fitting when the number of parameters determined by the model (i.e., the model's capacity) are altered.  The greater the number of parameters that can be learned, the more overfit the model tends to be.  This is because the model is better at mapping to the training set than it is  at generalizing predictions to data it has never seen before.  On the other hand, the fewer the parameters to be learned, the more underfit the model tends to be.  This is because the model can't really map well to the training data, which also causes the model to be similarly less accurate at generalizing to data it hasn't seen before.  The tiny model was the most underfit, with both a low training and testing/validation accuracy (I will be inserting the respective values soon).  The small model was an improvement, but it was still underfit, with both a low training and testing accuracy.  The medium model improved greatly on its training accuracy, but the testing accuracy remained quite similar to that of the tiny model.  Thus, the medium model was slightly overfit.  The large model achieved perfect accuracy on the training data and the testing accuracy slightly improved from the medium model, but also stayed similar to that of the tiny model.  Consequently, the large model was the most overfit.  As such, the medium model would likely be the best option for this dataset, as it increases the training accuracy without being quite as overfit as the large model.  I have attached a plot portraying the models' training and testing accuracies below. 
+  
+  
+   ![Model Accuracies](EverythingAccuracy.png)
