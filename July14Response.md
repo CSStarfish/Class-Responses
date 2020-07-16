@@ -20,10 +20,10 @@
    
    ![First Filter](FirstFilter.png)  
    
-   
-   
-   |    -1 * value of pixel at (x-1,y+1)  |    0.5 * value of pixel at (x,y+1)         |   1.5 * value of pixel at (x+1,y+1)  |
+    
+   |                                      |                                            |                                      | 
    | ------------------------------------ | ------------------------------------------ | ------------------------------------ |
+   |    -1 * value of pixel at (x-1,y+1)  |    0.5 * value of pixel at (x,y+1)         |   1.5 * value of pixel at (x+1,y+1)  |
    |     0 * value of pixel at (x-1,y)    |    4.5 * value of current pixel at (x,y)   |     2 * value of pixel at (x+1,y)    |
    |    -2 * value of pixel at (x-1,y-1)  |    -1.5 * value of pixel at (x,y-1)        |     -3* value of pixel at (x+1,y-1)  |
    
@@ -34,10 +34,9 @@
    
    ![Second Filter](SecondFilter.png)
    
-   
-   
+   |                                         |                                            |                                       |   
+   | --------------------------------------- | ------------------------------------------ | ------------------------------------- |   
    |    -0.55 * value of pixel at (x-1,y+1)  |    10 * value of pixel at (x,y+1)          |      2 * value of pixel at (x+1,y+1)  |
-   | --------------------------------------- | ------------------------------------------ | ------------------------------------- |
    |        0 * value of pixel at (x-1,y)    |     2 * value of current pixel at (x,y)    |      2 * value of pixel at (x+1,y)    |
    |       -3 * value of pixel at (x-1,y-1)  |    -8 * value of pixel at (x,y-1)          |     -4 * value of pixel at (x+1,y-1)  |
    
@@ -48,10 +47,9 @@
    
    ![Third Filter](ThirdFilter.png)
    
-
-
-   |    -5 * value of pixel at (x-1,y+1)  |    0 * value of pixel at (x,y+1)          |      1 * value of pixel at (x+1,y+1)  |
+   |                                      |                                           |                                       |
    | ------------------------------------ | ----------------------------------------- | ------------------------------------- |
+   |    -5 * value of pixel at (x-1,y+1)  |    0 * value of pixel at (x,y+1)          |      1 * value of pixel at (x+1,y+1)  |
    |     5 * value of pixel at (x-1,y)    |   -2 * value of current pixel at (x,y)    |    -20 * value of pixel at (x+1,y)    |
    |     0 * value of pixel at (x-1,y-1)  |    3 * value of pixel at (x,y-1)          |     25 * value of pixel at (x+1,y-1)  |
 
@@ -62,6 +60,7 @@
 
    **Stretch goal: instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image?  Again describe the results.**
 
+---
 ---
 
 **B. Another useful method is pooling.  Apply a 2x2 filter to one of your convolved images, and plot the result.  In effect what have you accomplished by applying this filter?  Can you determine from the code which type of pooling filter is applied, and the method for selecting a pixel value (see the following snippet)?  Did the result increase in size or decrease?  Why would this method be useful?**  
@@ -75,12 +74,25 @@
    ![Pooled Second Filter](SecondFilter_pooled.png)
 
 
-*    The code from the reference snippet above utilizes a 2x2 MAX pooling filter, which selects the largest pixel value from a set of values containing the current pixel value and the values of its most adjacent neighbors to its immediate right, bottom, and bottom-right.  In other words, the filter will scan a 2x2 grid of pixels, like the one shown below, to find the highest value among them.  This maximum value will become the new current pixel value in the pooled image.  The process will repeat for every other pixel in every other row of the provided image.  Consequently, the resulting image will be reduced to 1/4 of the original size.  
-     
+*    The code from the reference snippet above utilizes a 2x2 MAX pooling filter, which selects the largest pixel value from a set of values containing the current pixel value and the values of its most adjacent neighbors to its immediate right, bottom, and bottom-right.  In other words, the filter will scan a 2x2 grid of pixels, like the one shown below, to find the highest value among them.  This maximum value will become the new current pixel value in the pooled image.  The process will repeat for every other pixel in every other row of the provided image.  Consequently, the resulting image will be reduced to 1/4 of the original size. 
+
      Although the size is decreased, the important features found from the convolving filter are preserved in the new image.  This method is useful because it decreases the amount of information required to classify and differentiate images by allowing the model to focus its decision-making on the presence of these distinct features found from convolving the images.  Consequently, less space and time is required to run the models.
+
+
+![Pooling Example](Pooling.PNG)
+
+     
+*    I also created a table that demonstrates the process more generally below, with the current pixel labeled as (x,y).  The pooling filter will iterate through each pixel labeled in the cells below and select the maximum of these values to be the value of the pixel in the resulting image of reduced size.  For example, the filter will first select the largest value among pixels (x,y), (x+1,y), (x,y-1), and (x+1,y-1).  It will then use this value for the top left pixel in the resulting image.  
+
+   |                                                                |                                                                            |
+   | -------------------------------------------------------------- | -------------------------------------------------------------------------- |
+   |    Value of pixel at (x,y); (x+2,y); (x,y-2); (x+2,y-2)        |    Value of pixel at (x+1,y); (x+3,y); (x+1,y-2); (x+3,y-2)                |
+   |    Value of pixel at (x,y-1); (x+2,y-1); (x,y-3); (x+2,y-3)    |    Value of current pixel at (x+1,y-1); (x+3,y-1); (x+1,y-3); (x+3,y-3)    |
+   
 
    **Stretch goal:  again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.**
 
+---
 ---
 
 **C. The lecture for today (Coding with Convolutional Neural Network) compared the application of our previously specified deep neural network with a newly specified convolutional neural network.  Instead of using the fashion_MNIST dataset, use the mnist dataset (the hand written letters) to train and compare your DNN and CNN output.**      
