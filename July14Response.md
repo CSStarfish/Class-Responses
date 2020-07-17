@@ -79,7 +79,11 @@
 
 ![Snippet 2](July14Snippet.PNG)
 
-*    The image below depicts the pooled version of the image to which the second convolving filter was applied (as previously shown in Part A of this response).  The image decreased slightly in size, but the most important features were preserved.  The contrast was also increased, as the lighest colors were practically reduced to white and the darkest colors were slightly brightened too.  When previously applying the second filter, I mentioned that the image had been converted from gray-scale to black-and-white, but this is even more true after the 2x2 pooling filter was applied.
+***The image below depicts the convolved imaged used, prior to pooling
+
+![Second Filter](SecondFilter.png)
+
+*    The image below depicts the pooled version of the picture to which the second convolving filter was applied (as previously shown in Part A of this response, which I also re-attached just above this sentence).  The image decreased slightly in size, but the most important features were preserved.  The contrast was also increased, as the lighest colors were practically reduced to white and the darkest colors were slightly brightened too.  When previously applying the second filter, I mentioned that the image had been converted from gray-scale to black-and-white, but this is even more true after the 2x2 pooling filter was applied.
 
 
 
