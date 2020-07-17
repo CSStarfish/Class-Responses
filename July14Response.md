@@ -4,7 +4,7 @@
 
 ![Snippet 1](July14Snippet1.PNG)  
 
-***The image below depicts the original version of two people ascending the outdoor staircase:
+***The image below depicts the original version of two people ascending the outdoor staircase:***
 
 
    ![Original](Original.png)
