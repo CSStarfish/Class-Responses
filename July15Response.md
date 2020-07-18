@@ -132,19 +132,19 @@ Original: Horse
 
 *     The decline in testing accuracy of the model after the 100th epoch, as evidenced by the increase in loss, MAE, and MSE, demonstrates why it was important to include a callback in the model.  This callback told the neural network to stop training once the testing accuracy stopped improving (which would have occurred when the loss, MAE, and MSE of the testing set started to increase) to prevent overfitting.
   
-      ![Dataset Tail](Dataframe_tail.PNG)
+    ![Dataset Tail](Dataframe_tail.PNG)
 
-*     Loss:
+*    Loss:
 
-      ![Loss](Loss_tail.png)
+    ![Loss](Loss_tail.png)
       
-*     Mean Absolute Error (MAE):
+*    Mean Absolute Error (MAE):
 
-      ![MAE](MAE_tail.png)
+    ![MAE](MAE_tail.png)
       
-*     Mean Standard Error (MSE):
+*    Mean Standard Error (MSE):
 
-      ![MSE](MSE_tail.png)
+    ![MSE](MSE_tail.png)
 
 ---
 ---
