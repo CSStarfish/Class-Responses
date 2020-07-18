@@ -34,85 +34,103 @@
 
 **I provided both my CNN that has twice as many filters in each layer and my original CNN with various images of famous people and horses to further test the models' accuracies on images they haven't seen before.  Some of the pictures show people riding horses for an added challenge.  I have attached the images and the models' predictions below.  Interestingly, both models were consistent, in that they shared the same prediction for each image.  They both seemed quite accurate, and a lot of the erroneous predictions seemed relatively reasonable.  For example, the images containing both humans and people would have made it difficult for the model to decide which subject was most prominent.  In addition, Taylor Swift has wispy/long-ish hair that may have made the model believe she was a horse.  In another instance, the front-facing view of Justify was predicted to depict a human.  This is likely because the image does not show much more of the horse than its face, so the model couldn't base its predictions off of the number of legs in the image or the presence of a long mane.  The erroneous prediction that Jimmy Fallon was a horse didn't seem as reasonable as the other errors, but this false prediction may have been caused by the busy nature of the background.**
 
-*    Harry Styles
+**Harry Styles**
 
 ![Harry](HarryStyles.PNG)
 
-**Original:** Human
+* Original: Human
 
-**2x filters:** Human
+* 2x filters: Human
 
-*    Jimmy Fallon
+
+
+**Jimmy Fallon**
 
 ![Jimmy](JimmyFallon.jpg)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
-*    Taylor Swift
+
+
+**Taylor Swift**
 
 ![Taylor](TaylorSwift.PNG)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
-*    Taylor Swift On Horse
+
+
+**Taylor Swift On Horse**
 
 ![Taylor Swift, Horse](TaylorSwiftHorse.PNG)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
-*    Secretariat
+
+
+**Secretariat**
 
 ![Secretariat](secretariat.jpg)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
-*    Secretariat's Son
+
+
+**Secretariat's Son**
 
 ![Secretariat Son](secretariat_son.jpg)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
-*    Secretariat With Rider
+
+
+**Secretariat With Rider**
 
 ![Secretariat, Rider](secretariat_with_rider.jpg)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
-*    Justify - 2018 Triple Crown Winner
+
+
+**Justify - 2018 Triple Crown Winner**
 
 ![Justify](justify.jpg)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
-*    Justify From Front Angle
+
+
+**Justify From Front Angle**
 
 ![Justify, front](justify_front_facing.jpg)
 
-**Original:** Human
+* Original: Human
 
-**2x filters:** Human
+* 2x filters: Human
 
-*    Justify With Rider
+
+
+**Justify With Rider**
 
 ![Justify, rider](justify_with_rider.jpg)
 
-**Original:** Horse
+* Original: Horse
 
-**2x filters:** Horse
+* 2x filters: Horse
 
 
 ---
