@@ -68,7 +68,6 @@
  
 *    Convolving filters are very useful for computer vision because they process and extract the important features from the image.  Thus, the model requires less information to classify and differentiate images because it can focus its decision-making on the presence of these key details.  As a result, it requires less space and time to run the model.  Plus, since the convolving layers narrow down the information that is passed to the final Dense layers, the Dense layers are able to make more accurate predictions because they have more refined data.  Convolving filters are particularly effective at allowing the computer to detect edges.  
 
-   **Stretch goal: instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image?  Again describe the results.**
 
 ---
 ---
@@ -110,8 +109,6 @@
    |    Value of pixel at (x,y); (x+2,y); (x,y-2); (x+2,y-2)        |    Value of pixel at (x+1,y); (x+3,y); (x+1,y-2); (x+3,y-2)                |
    |    Value of pixel at (x,y-1); (x+2,y-1); (x,y-3); (x+2,y-3)    |    Value of current pixel at (x+1,y-1); (x+3,y-1); (x+1,y-3); (x+3,y-3)    |
    
-
-   **Stretch goal:  again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.**
 
 ---
 ---
