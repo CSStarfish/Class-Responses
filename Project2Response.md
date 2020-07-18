@@ -1,4 +1,4 @@
-Working on this project, I decided to take inspiration from William & Mary's beautiful campus.  I applied several different patterns and various colors to style pictures of various landmarks across campus, but ultimately I found a picture of a tile backsplash that created what looked like a really cool water color painting of the Wren building.  I have attached it below.
+Working on this project, I decided to take inspiration from William & Mary's beautiful campus.  I applied several different patterns and various colors to style pictures of landmarks across campus, but ultimately I found a picture of a tile backsplash that created what looked like a really cool water color painting of the Wren building.  I have attached it below.
 
 ![Watercolor Wren](watercolor_wren.png)
 
