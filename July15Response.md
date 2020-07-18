@@ -32,9 +32,11 @@
       
      Within the model's compiler, there are three arguments: loss, optimizer, and metrics.  Binary Cross-Entropy is provided as the function for the "loss" argument, as the model is using binary classification in order to classify an object as one of two things: a human or a horse.  The RMSprop function is provided for the "optimizer" argument, with an initial learning rate of 0.001.  RMSprop behaves similarly to the Adam optimizer, which we use often in this class, in that it adapts its learning rate based upon the status of various values in the model after each epoch, such as the loss value.  Lastly, the metrics argument uses the accuracy function, which records the accuracy of the model during training.
 
-**I provided both my CNN that has twice as many filters in each layer and my original CNN with various images of famous people and horses to further test the models' accuracies on images they haven't seen before.  Some of the pictures show people riding horses for an added challenge.  I have attached the images and the models' predictions below.  Interestingly, both models were consistent, in that they shared the same prediction for each image.  They both seemed quite accurate, and a lot of the erroneous predictions seemed relatively reasonable.  For example, the images containing both humans and people would have made it difficult for the model to decide which subject was most prominent.  In addition, Taylor Swift has wispy/long-ish hair that may have made the model believe she was a horse.  In another instance, the front-facing view of Justify was predicted to depict a human.  This is likely because the image does not show much more of the horse than its face, so the model couldn't base its predictions off of the number of legs in the image or the presence of a long mane.  The erroneous prediction that Jimmy Fallon was a horse didn't seem as reasonable as the other errors, but this false prediction may have been caused by the busy nature of the background.**
+**I provided my CNN that has twice as many filters in each layer, as well as my original CNN, with various images of famous people and horses to further test the models' accuracies on images they haven't seen before.  Some of the pictures show people riding horses for an added challenge.  I have attached the images and the models' predictions below.  Interestingly, both models were consistent, in that they shared the same prediction for each image.  They both seemed quite accurate, and a lot of the erroneous predictions seemed relatively reasonable.  For example, the images containing both humans and people would have made it difficult for the model to decide which subject was most prominent.  In addition, Taylor Swift has wispy/long-ish hair that may have made the model believe she was a horse.  In another instance, the front-facing view of Justify was predicted to depict a human.  This is likely because the image does not show much more of the horse than its face, so the model couldn't base its predictions off of the number of legs in the image or the presence of a long mane.  The erroneous prediction that Jimmy Fallon was a horse didn't seem as reasonable as the other errors, but this false prediction may have been caused by the busy nature of the background.**
 
-**Harry Styles**
+
+
+***Harry Styles***
 
 ![Harry](HarryStyles.PNG)
 
@@ -44,7 +46,7 @@
 
 
 
-**Jimmy Fallon**
+***Jimmy Fallon***
 
 ![Jimmy](JimmyFallon.jpg)
 
@@ -54,7 +56,7 @@
 
 
 
-**Taylor Swift**
+***Taylor Swift***
 
 ![Taylor](TaylorSwift.PNG)
 
@@ -64,7 +66,7 @@
 
 
 
-**Taylor Swift On Horse**
+***Taylor Swift On Horse***
 
 ![Taylor Swift, Horse](TaylorSwiftHorse.PNG)
 
@@ -74,7 +76,7 @@
 
 
 
-**Secretariat**
+***Secretariat***
 
 ![Secretariat](secretariat.jpg)
 
@@ -84,7 +86,7 @@
 
 
 
-**Secretariat's Son**
+***Secretariat's Son***
 
 ![Secretariat Son](secretariat_son.jpg)
 
@@ -94,7 +96,7 @@
 
 
 
-**Secretariat With Rider**
+***Secretariat With Rider***
 
 ![Secretariat, Rider](secretariat_with_rider.jpg)
 
@@ -104,7 +106,7 @@
 
 
 
-**Justify - 2018 Triple Crown Winner**
+***Justify - 2018 Triple Crown Winner***
 
 ![Justify](justify.jpg)
 
@@ -114,7 +116,7 @@
 
 
 
-**Justify From Front Angle**
+***Justify From Front Angle***
 
 ![Justify, front](justify_front_facing.jpg)
 
@@ -124,7 +126,7 @@
 
 
 
-**Justify With Rider**
+***Justify With Rider***
 
 ![Justify, rider](justify_with_rider.jpg)
 
