@@ -24,7 +24,7 @@
       
      After passing through the flattening layer, the data will be stored in a one-dimensional array.  The Dense layers then determine the probability that the image portrays a human or a horse.  
 
-     (I will be adding where I discuss modifying the number of filters in the Conv2D layers shortly).
+     The table above summarizes the model architecture for my initial CNN to predict whether an images is a horse or a human.  After completing yesterday's assignment and learning that 32 filters in the initial convolving layer yielded a slightly more accurate model than the neural network with 16 filters in the initial convolving layer, I decided to create another CNN with 32 filters in the initial layer, 64 in the second convolving layer, and 128 in the third/final convolving layer.  However, in this application to horses and humans, the CNN with more filters actually had a lower final accuracy and higher loss value than the original CNN.  The final accuracy for the original CNN was approximatey 0.86, while the final accuracy for the CNN with more filters was approximately 0.84; the final loss for the original CNN was approximately 0.00081, while the final loss for the CNN with more filters was approximately 0.00020.
 
      The model utilizes the relu activation function in all of the convolving layers, as well as the first Dense layer.  Relu ensures there are no negative neural outputs by setting all negative output values equal to 0.  It is important to do this because negative outputs in one layer of the neural network could impede the accuracy of the model's results by canceling out positive outputs in subsequent layers.  
       
@@ -32,20 +32,104 @@
       
      Within the model's compiler, there are three arguments: loss, optimizer, and metrics.  Binary Cross-Entropy is provided as the function for the "loss" argument, as the model is using binary classification in order to classify an object as one of two things: a human or a horse.  The RMSprop function is provided for the "optimizer" argument, with an initial learning rate of 0.001.  RMSprop behaves similarly to the Adam optimizer, which we use often in this class, in that it adapts its learning rate based upon the status of various values in the model after each epoch, such as the loss value.  Lastly, the metrics argument uses the accuracy function, which records the accuracy of the model during training.
 
+**I provided both my CNN that has twice as many filters in each layer and my original CNN with various images of famous people and horses to further test the models' accuracies on images they haven't seen before.  Some of the pictures show people riding horses for an added challenge.  I have attached the images and the models' predictions below.  Interestingly, both models were consistent, in that they shared the same prediction for each image.  They both seemed quite accurate, and a lot of the erroneous predictions seemed relatively reasonable.  For example, the images containing both humans and people would have made it difficult for the model to decide which subject was most prominent.  In addition, Taylor Swift has wispy/long-ish hair that may have made the model believe she was a horse.  In another instance, the front-facing view of Justify was predicted to depict a human.  This is likely because the image does not show much more of the horse than its face, so the model couldn't base its predictions off of the number of legs in the image or the presence of a long mane.  The erroneous prediction that Jimmy Fallon was a horse didn't seem as reasonable as the other errors, but this false prediction may have been caused by the busy nature of the background.**
+
+*    Harry Styles
+
+![Harry](HarryStyles.PNG)
+
+Original: Human
+
+2x filters: Human
+
+*    Jimmy Fallon
+
+![Jimmy](JimmyFallon.jpg)
+
+Original: Horse
+
+2x filters: Horse
+
+*    Taylor Swift
+
+![Taylor](TaylorSwift.PNG)
+
+Original: Horse
+
+2x filters: Horse
+
+*    Taylor Swift On Horse
+
+![Taylor Swift, Horse](TaylorSwiftHorse.PNG)
+
+Original: Horse
+
+2x filters: Horse
+
+*    Secretariat
+
+![Secretariat](secretariat.jpg)
+
+Original: Horse
+
+2x filters: Horse
+
+*    Secretariat's Son
+
+![Secretariat Son](secretariat_son.jpg)
+
+Original: Horse
+
+2x filters: Horse
+
+*    Secretariat With Rider
+
+![Secretariat, Rider](secretariat_with_rider.jpg)
+
+Original: Horse
+
+2x filters: Horse
+
+*    Justify - 2018 Triple Crown Winner
+
+![Justify](justify.jpg)
+
+Original: Horse
+
+2x filters: Horse
+
+*    Justify From Front Angle
+
+![Justify, front](justify_front_facing.jpg)
+
+Original: Human
+
+2x filters: Human
+
+*    Justify With Rider
+
+![Justify, rider](justify_with_rider.jpg)
+
+Original: Horse
+
+2x filters: Horse
+
+
 ---
 ---
 
 **B. Regression**
 
-  **1. Using the auto-mpg dataset (auto-mpg.data), upload the image where you used the seaborn library to pairwise plot the four variables specified in your model.  Describe how you could use this plot to investigate the co-relationship amongst each of your variables.  Are you able to identify interactions amongst variables with this plot?  What does the diagonal access represent?  Explain what this function is describing with regarding to each of the variables.**
+  **1. Using the auto-mpg dataset (auto-mpg.data), upload the image where you used the seaborn library to pairwise plot the four variables specified in your model.  Describe how you could use this plot to investigate the co-relationship amongst each of your variables.  Are you able to identify interactions amongst variables with this plot?  What does the diagonal axis represent?  Explain what this function is describing with regarding to each of the variables.**
   
   ![seaborn Plot](Regression.png)
+  
+  *   The set of graphs above plot the datapoints for each of the four variables in the model (i.e., MPG, cylinders, displacement, and weight) against one another.  This allows us to visualize any relationships between each variable.  For example, there appears to be a positive, linear relationship between displacement and weight.  In other words, as the weight of the automobile increases, the displacement increases.  Likewise, as the automobile's displacement increases, its weight increases.  There also appears to be positive relationships between the number of cylinders and the automobile's weight, as well as the number of cylinders and the automobile's displacement.  In other words, as the number of cylinders increases, the automobile's weight increases; and vice versa.  Similarly, as the number of cylinders increases, the automobile's displacement increases; and vice versa.  However, the data forms clusters, so it is unclear what type of relationship exists between these variables beyond this.  Additionally, there appears to be a negative logarithmic relationship between the autombile's MPG and weight, as well as the automobile's MPG and displacement.  As the autombile's MPG increases, the weight gradually decreases; and vice versa.  Likewise, as the automobile's MPG increases, the displacement gradually decreases; and vice versa.  The relationship between the number of cylinders and the automobile's MPG is unclear, but the data does appear to be clustered.  The plots along the diagonal axis represent the variables plotted against themselves, which depict the distribution of the given variable's data (since a variable has a perfect correlation with itself).  More specifically, the code that produces this pairwise plot uses the kde function for the 'diag_kind' argument, which provides a kernel density estimate that predicts the probability distribution of the data and creates univariate plots of the distribution for each variable.  This functions by centering a normal curve at each of the variables' datapoints, summing the curves together, and then plotting a single normal curve with an area of 1 for each of the variables.
 
   **2. After running model.fit() on the auto-mpg.data data object, you returned the hist.tail() from the dataset where the training loss, MAE & MSE were recorded as well as those same variables for the validating dataset.  What interpretation can you offer when considering these last 5 observations from the model output?  Does the model continue to improve even during each of these last 5 steps?  Can you include a plot to illustrate your answer?**  
   
   
   
-  **Stretch goal: include and describe the final plot that illustrates the trend of true values to predicted values as overlayed upon the histogram of prediction error.**
 
 ---
 ---
@@ -54,7 +138,7 @@
 
   **1. What was the significance of comparing the 4 different sized models (tiny, small, medium, large)?  Can you include a plot to illustrate your answer?**
   
-  *   The different sized models were compared to show the extent of over- and under-fitting when the number of parameters determined by the model (i.e., the model's capacity) are altered.  The greater the number of parameters that can be learned, the more overfit the model tends to be.  This is because the model is better at mapping to the training set than it is  at generalizing predictions to data it has never seen before.  On the other hand, the fewer the parameters to be learned, the more underfit the model tends to be.  This is because the model can't really map well to the training data, which also causes the model to be similarly less accurate at generalizing to data it hasn't seen before.  The tiny model was the most underfit, with both a low training and testing/validation accuracy (I will be inserting the respective values soon).  The small model was an improvement, but it was still underfit, with both a low training and testing accuracy.  The medium model improved greatly on its training accuracy, but the testing accuracy remained quite similar to that of the tiny model.  Thus, the medium model was slightly overfit.  The large model achieved perfect accuracy on the training data and the testing accuracy slightly improved from the medium model, but also stayed similar to that of the tiny model.  Consequently, the large model was the most overfit.  As such, the medium model would likely be the best option for this dataset, as it increases the training accuracy without being quite as overfit as the large model.  I have attached a plot portraying the models' training and testing accuracies below. 
+  *   The different sized models were compared to show the extent of over- and under-fitting when the number of parameters determined by the model (i.e., the model's capacity) are altered.  The greater the number of parameters that can be learned, the more overfit the model tends to be.  This is because the model is better at mapping to the training set than it is  at generalizing predictions to data it has never seen before.  On the other hand, the fewer the parameters to be learned, the more underfit the model tends to be.  This is because the model can't really map well to the training data, which also causes the model to be similarly less accurate at generalizing to data it hasn't seen before.  The tiny model was the most underfit, with both a low training and testing/validation accuracy.  The small model was an improvement, but it was still underfit, with both a low training and testing accuracy.  The medium model improved greatly on its training accuracy, but the testing accuracy remained quite similar to that of the tiny model.  Thus, the medium model was slightly overfit.  The large model achieved perfect accuracy on the training data and the testing accuracy slightly improved from the medium model, but also stayed similar to that of the tiny model.  Consequently, the large model was the most overfit.  As such, the medium model would likely be the best option for this dataset, as it increases the training accuracy without being quite as overfit as the large model.  I have attached a plot portraying the models' training and testing accuracies below.  The overfitting of the large and medium model can be seen in the divergence of their respective training and validation curves.  It was interesting to see the training and validation losses for the large model begin diverging in the opposite directions sooner than those of the medium model, which validates that running fewer epochs during training can help mitigate overfitting.
   
   
    ![Model Accuracies](EverythingAccuracy.png)
