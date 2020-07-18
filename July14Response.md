@@ -79,7 +79,7 @@
 
 ![Snippet 2](July14Snippet.PNG)
 
-***The image below depicts the convolved imaged used, prior to pooling
+***The image below is a copy of the second convolved image from Part A, prior to pooling**
 
 ![Second Filter](SecondFilter.png)
 
@@ -116,7 +116,7 @@
 ---
 ---
 
-**C. The lecture for today (Coding with Convolutional Neural Network) compared the application of our previously specified deep neural network with a newly specified convolutional neural network.  Instead of using the fashion_MNIST dataset, use the mnist dataset (the hand written digits) to train and compare your DNN and CNN output.  Were you able to improve your model by adding the Conv2D and MaxPooling2D layers to your neural network?  Plot the convolutions graphically, include them in your response and describe them.  Edit the convolutions by changing the 32s to either 16 or 64 and describe what impact this had on accuracy and training time.**
+**C. The lecture for today (Coding with Convolutional Neural Network) compared the application of our previously specified deep neural network with a newly specified convolutional neural network.  Instead of using the fashion_MNIST dataset, use the mnist dataset (the hand written digits) to train and compare your DNN and CNN output.  Were you able to improve your model by adding the Conv2D and MaxPooling2D layers to your neural network?  Plot the convolutions graphically, include them in your response and describe them.  Edit the convolutions by changing the 32s to either 16 or 64 and describe what impact this had on accuracy and training time.  What happens if you add more convolution layers?**
 
 *    Adding the Conv2D and MaxPooling2D layers to my neural network increased the accuracy value of the model by just over 0.1.  While the dense neural network (DNN) predictions were very accurate, with a value of approximately 0.98, the convolutional neural network (CNN) predictions had a slightly higher accuracy value of approximately 0.99.  The CNN's heightened accuracy is even more strongly supported by its lower loss value than the DNN.  There was just under a 2.5x difference between the two, with the CNN's loss equating to approximately 0.029 and the DNN's loss equating to about 0.071.
 
@@ -126,4 +126,4 @@
 
 *    After editing the convolutions by changing the 32 in the initial layer to 16, the training time decreased quite significantly from an average duration of 30.4 seconds per epoch to an average duration of 17.8 seconds per epoch.  While the final accuracies remained quite similar at approximately 0.9905, the loss slightly increased when changing the 32 to a 16.  With the first convolution set to 32, the loss was approximately 0.029; when reset to 16, the loss was approximately 0.031.  This indicates that the model with the first convolution layer set to 32 is slightly more accurate than the model with the first convolution layer set to 16, as a more accurate model has a lower loss.  Based on these results, I would predict that setting the first convolution layer to 64 would further increase the accuracy of the model in predicting the identity of a handwritten digit.
 
-   **3. What happens if you add more convolution layers?**
+*     I decided to add a third convolution after the final pooling layer.  However, this did not seem to produce a better model than the orginal CNN.  Not only did adding the additional convolution layer greatly increase the training time to an average duration of 43 seconds per epoch, but it also slightly decreased the accuracy to 0.9883 (the previous accuracy was 0.9905) and increased the loss to 0.041 (the previous loss was 0.029).  I then added a third pooling layer.  This further increased the training time to an average duration of 55.2 seconds per epoch.  In addition, the model's loss increased slightly to 0.042 and the accuracy decreased slightly to 0.9877.  Based on these results, I would predict that adding additional convolution and pooling layers would not enhance the model's performance and, in fact, would likely impede the model's performance.
