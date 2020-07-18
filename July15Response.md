@@ -38,81 +38,81 @@
 
 ![Harry](HarryStyles.PNG)
 
-Original: Human
+**Original:** Human
 
-2x filters: Human
+**2x filters:** Human
 
 *    Jimmy Fallon
 
 ![Jimmy](JimmyFallon.jpg)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 *    Taylor Swift
 
 ![Taylor](TaylorSwift.PNG)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 *    Taylor Swift On Horse
 
 ![Taylor Swift, Horse](TaylorSwiftHorse.PNG)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 *    Secretariat
 
 ![Secretariat](secretariat.jpg)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 *    Secretariat's Son
 
 ![Secretariat Son](secretariat_son.jpg)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 *    Secretariat With Rider
 
 ![Secretariat, Rider](secretariat_with_rider.jpg)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 *    Justify - 2018 Triple Crown Winner
 
 ![Justify](justify.jpg)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 *    Justify From Front Angle
 
 ![Justify, front](justify_front_facing.jpg)
 
-Original: Human
+**Original:** Human
 
-2x filters: Human
+**2x filters:** Human
 
 *    Justify With Rider
 
 ![Justify, rider](justify_with_rider.jpg)
 
-Original: Horse
+**Original:** Horse
 
-2x filters: Horse
+**2x filters:** Horse
 
 
 ---
