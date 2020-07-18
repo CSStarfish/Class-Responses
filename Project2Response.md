@@ -15,4 +15,6 @@ Since the DeepDream implementation worked out so well on the picture of the Sunk
 ![Wren](Wren.png)
 
 
-For my t-shirt contest entry, I would like to place the first DeepDream picture of the Sunken Garden on the back of the shirt and the William & Mary seal as the crest on the front of the shirt.
+For my T-shirt contest entry, I would like to place the first DeepDream picture of the Sunken Garden on the back of the shirt and the William & Mary seal as the crest on the front of the shirt.
+
+![Front](FrontofShirt.PNG)   ![Back](BackofShirt.PNG)
