@@ -9,6 +9,8 @@
 6. [July 14, Response](https://csstarfish.github.io/Machine-Learning/July14Response)
 7. [July 15, Response](https://csstarfish.github.io/Machine-Learning/July15Response)
 8. [Project 2, T-shirt Entry Draft](https://csstarfish.github.io/Machine-Learning/Project2Response)
+9. [July 20, Response](https://csstarfish.github.io/Machine-Learning/July20Response)
+
 
 ---
 
