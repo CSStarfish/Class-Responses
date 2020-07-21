@@ -8,8 +8,10 @@
     Some obstacles to the accuracy of the model include the fact that, sometimes, people's facial expressions are incongruous with how they truly feel.  People often internalize their feelings and don't let them surface.  For example, people may put on appearances to look cheerful and excited, but really feel unhappy and stressed.  In addition, some people have a neutral expression that makes it difficult to determine whether they are happy or sad.  However, this concern may not prove to be much of a hindrance because the person's tone of voice can help resolve any uncertainty and validate any assumptions made based on appearances.  Another potential obstacle would be trying to detect facial expressions in suboptimal conditions, such as where lighting is insufficient.  In today's pandemic environment, these suboptimal conditions could also include people wearing face masks, which would prevent the model from using mouths in its decision-making process.
 
 **B. Describe your implementation of the cats & dogs exercise.  How did you setup the data?**
+   
    **1. Which optimizer have you selected, and how might it compare to other possible choices?**
     
+    *  I selected the RMSProp optimizer, with the initial learning rate set to 0.001.  RMSProp is a better choice than the RProp optimizer when using large datasets with very small batches because RMSProp determines the next learning rate by dividing by the moving average of the batch's gradient, which allows the gradient to stay around the same value.  With small batches, RProp has difficulty maintaining its magnitude because it relies on the gradient's sign (i.e., positive or negative).  RMSProp is also a better choice than Adagrade because RMSProp keeps the gradient from stopping at a "saddle point" by keeping a moving average of squared gradients, rather than accruing the squared gradients over time.  RMSProp also travels through these "saddle points" much more quickly than alternative optimizers like SGD, Momentum, NAG, Adagrad, or Adadelta.
     
    **2. Describe your selected loss function and it’s implementation.  How is it effectively penalizing bad predictions?**
     
