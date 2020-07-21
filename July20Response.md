@@ -19,6 +19,7 @@
     
    **3. What is the purpose of the metric= argument in your model.compile() function?**
    
+    *    The metric= argument helps evaluate the model's performance outside of the training set.  The value of the selected metric is saved and output during the fitting process, and can also be output using .evaluate().  In the case of this model, which predicts whether an image depicts a dog or a cat, I selected the 'acc' metric.  'Acc' stands for accuracy and records the test/validation accuracy of the model.
    
    **4. Plot the accuracy and loss results for both the training and test datasets.  Include these in your response.  Assess the model and describe how good you think it performed.**
     
