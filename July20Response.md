@@ -15,6 +15,7 @@
     
    **2. Describe your selected loss function and it’s implementation.  How is it effectively penalizing bad predictions?**
     
+    *   I selected the Binary Crossentropy loss function because this is a binary classification problem in which the model must decide if a picture portrays one of two types of animal: a cat or a dog.  This loss function works by predicting the probability that the image depicts a cat (labeled as a '0') or a dog (labeled as a '1').  The dog image predictions' probabilities are represented by the area under the sigmoid curve from 0 to 1, while the cat image predictions' probabilities are represented by the area above the sigmoid curve.  The Binary Crossentropy function penalizes bad predictions by yielding a higher loss value than more accurate predictions.  It does this using the negative log of the probabilities for every image, which approach positive infinity as the predictions' probabilities approach 0.  Then, these negative log values are averaged together to compute the final Binary Crossentropy loss.            
     
    **3. What is the purpose of the metric= argument in your model.compile() function?**
    
