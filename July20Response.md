@@ -41,7 +41,7 @@
     
     *     Cats:
     
-    ![
+    ![Fluffy Cat](fluffycat.jpg)
     
     ![Grumpy Cat](grumpycat.jpg)
    
