@@ -11,38 +11,38 @@
    
    **1. Which optimizer have you selected, and how might it compare to other possible choices?**
     
-    *  I selected the RMSProp optimizer, with the initial learning rate set to 0.001.  RMSProp is a better choice than the RProp optimizer when using large datasets with very small batches because RMSProp determines the next learning rate by dividing by the moving average of the batch's gradient, which allows the gradient to stay around the same value.  With small batches, RProp has difficulty maintaining its magnitude because it relies on the gradient's sign (i.e., positive or negative).  RMSProp is also a better choice than Adagrade because RMSProp keeps the gradient from stopping at a "saddle point" by keeping a moving average of squared gradients, rather than accruing the squared gradients over time.  RMSProp also travels through these "saddle points" much more quickly than alternative optimizers like SGD, Momentum, NAG, Adagrad, or Adadelta.
+*     I selected the RMSProp optimizer, with the initial learning rate set to 0.001.  RMSProp is a better choice than the RProp optimizer when using large datasets with very small batches because RMSProp determines the next learning rate by dividing by the moving average of the batch's gradient, which allows the gradient to stay around the same value.  With small batches, RProp has difficulty maintaining its magnitude because it relies on the gradient's sign (i.e., positive or negative).  RMSProp is also a better choice than Adagrade because RMSProp keeps the gradient from stopping at a "saddle point" by keeping a moving average of squared gradients, rather than accruing the squared gradients over time.  RMSProp also travels through these "saddle points" much more quickly than alternative optimizers like SGD, Momentum, NAG, Adagrad, or Adadelta.
     
    **2. Describe your selected loss function and it’s implementation.  How is it effectively penalizing bad predictions?**
     
-    *   I selected the Binary Crossentropy loss function because this is a binary classification problem in which the model must decide if a picture portrays one of two types of animal: a cat or a dog.  This loss function works by predicting the probability that the image depicts a cat (labeled as a '0') or a dog (labeled as a '1').  The dog image predictions' probabilities are represented by the area under the sigmoid curve from 0 to 1, while the cat image predictions' probabilities are represented by the area above the sigmoid curve.  The Binary Crossentropy function penalizes bad predictions by yielding a higher loss value than more accurate predictions.  It does this using the negative log of the probabilities for every image, which approach positive infinity as the predictions' probabilities approach 0.  Then, these negative log values are averaged together to compute the final Binary Crossentropy loss.            
+*     I selected the Binary Crossentropy loss function because this is a binary classification problem in which the model must decide if a picture portrays one of two types of animal: a cat or a dog.  This loss function works by predicting the probability that the image depicts a cat (labeled as a '0') or a dog (labeled as a '1').  The dog image predictions' probabilities are represented by the area under the sigmoid curve from 0 to 1, while the cat image predictions' probabilities are represented by the area above the sigmoid curve.  The Binary Crossentropy function penalizes bad predictions by yielding a higher loss value than more accurate predictions.  It does this using the negative log of the probabilities for every image, which approach positive infinity as the predictions' probabilities approach 0.  Then, these negative log values are averaged together to compute the final Binary Crossentropy loss.            
     
    **3. What is the purpose of the metric= argument in your model.compile() function?**
    
-    *    The metric= argument helps evaluate the model's performance outside of the training set.  The value of the selected metric is saved and output during the fitting process, and can also be output using .evaluate().  In the case of this model, which predicts whether an image depicts a dog or a cat, I selected the 'acc' metric.  'Acc' stands for accuracy and records the test/validation accuracy of the model.
+*     The metric= argument helps evaluate the model's performance outside of the training set.  The value of the selected metric is saved and output during the fitting process, and can also be output using .evaluate().  In the case of this model, which predicts whether an image depicts a dog or a cat, I selected the 'acc' metric.  'Acc' stands for accuracy and records the test/validation accuracy of the model.
    
    **4. Plot the accuracy and loss results for both the training and test datasets.  Include these in your response.  Assess the model and describe how good you think it performed.**
     
-    ![Accuracy](CatsandDogsAccuracy.png)
+   ![Accuracy](CatsandDogsAccuracy.png)
     
-    ![Loss](CatsandDogsLoss.png)
+   ![Loss](CatsandDogsLoss.png)
     
-    (I will be adding additional detail about this shortly.)
+   (I will be adding additional detail about this shortly.)
     
    **5. Use the model to predict 3 dog images and 3 cat images.  Upload you images and the prediction.  How did your model perform in practice?  Do you have any ideas of how to improve the model’s performance?**
    
-    *     Dogs:
+*     Dogs:
     
-    ![Beagle](Beagle.jpg)
+   ![Beagle](Beagle.jpg)
     
-    ![Papillon](Papillon.jpg)
+   ![Papillon](Papillon.jpg)
     
-    ![Fluffy Dog](fluffydog.jpg)
+   ![Fluffy Dog](fluffydog.jpg)
     
-    *     Cats:
+*     Cats:
     
-    ![Fluffy Cat](fluffycat.jpg)
+   ![Fluffy Cat](fluffycat.jpg)
     
-    ![Grumpy Cat](grumpycat.jpg)
+   ![Grumpy Cat](grumpycat.jpg)
    
-    ![Kitten](kitten.jpg)
+   ![Kitten](kitten.jpg)
