@@ -23,5 +23,26 @@
    
    **4. Plot the accuracy and loss results for both the training and test datasets.  Include these in your response.  Assess the model and describe how good you think it performed.**
     
+    ![Accuracy](CatsandDogsAccuracy.png)
+    
+    ![Loss](CatsandDogsLoss.png)
+    
+    (I will be adding additional detail about this shortly.)
     
    **5. Use the model to predict 3 dog images and 3 cat images.  Upload you images and the prediction.  How did your model perform in practice?  Do you have any ideas of how to improve the model’s performance?**
+   
+    *     Dogs:
+    
+    ![Beagle](Beagle.jpg)
+    
+    ![Papillon](Papillon.jpg)
+    
+    ![Fluffy Dog](fluffydog.jpg)
+    
+    *     Cats:
+    
+    ![
+    
+    ![Grumpy Cat](grumpycat.jpg)
+   
+    ![Kitten](kitten.jpg)
