@@ -122,16 +122,16 @@
 
 
 *   **LinearClassifier Results:**
-      Accuracy: 0.967
+      Testing Accuracy: 0.967
       Average Loss: 0.069
 
 
 *   **DNNLinearCombinedClassifier Results:**
-      Accuracy: 0.967
+      Testing Accuracy: 0.967
       Average Loss: 0.327
 
 *   **DNNClassifier Results:**
-      Accuracy: 0.733
+      Testing Accuracy: 0.733
       Average Loss: 0.587
 
 ---
@@ -174,4 +174,6 @@
 *   Dense features identify the absence of a feature and provide the specific space where that feature is missing by populating the dataset with zeroes.  (I will be adding more detail about this shortly).
 
 **3. Describe the feature columns that have been input to your LinearClassifier().  How would you assess the result from your initial output?  What is the purpose of adding a cross featured column?  Did your attempt to capture the interaction between age and gender and incorporate it into your model improve performance?  Include and interpret your predicted probabilities and ROC curve plots.**
+
+*   I would assess the result from my output by analyzing the ROC curve plot.  (I will be adding more detail about this shortly).
 
