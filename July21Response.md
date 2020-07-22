@@ -113,9 +113,9 @@
 
 *   It is important to define feature columns because these objects describe the features the model should use from the input functions' features dictionary.  The features data are placed in these columns and provide the identifying characteristics of the classes, which the model uses as the basis for its classification predictions.  In the case of this program, the feature columns include the sepal length, sepal width, petal length, and petal width; each of these can be used to identify the type of iris (i.e., Setosa, Versicolor, and Virginica).  These columns represent each feature as a 32 bit, floating point integer for the model.  Depending on the Estimator selected, the feature columns will also be passed to the feature column argument when instantiating the Estimator.
 
-**4. Describe the command classifier.train() in detail.  What is the classifier and how did you define it?  Which nested function (and how have you defined it) are you applying to the training and test detests?**
+**4. Describe the command classifier.train() in detail.  What is the classifier and how did you define it?  Which nested function (and how have you defined it) are you applying to the training and testing sets?**
 
-*   I used the DNNClassifier and defined it by creating a variable called "classifier" and providing it with an instance of the DNNClassifier.  The instance was provided with the dataset's feature columns, a dense neural network (DNN) containing 30 hidden nodes in the first layer and 10 hidden nodes in the second layer, and the specification that there are three potential classes (one for each species of Iris).  The feature columns were provided as the "feature_columns" argument, the DNN with hidden nodes was provided as the "hidden_units" argument, and the three classes were provided as the "n_classes" argument.  I have included the code for this below:
+*   The command classifier.train() is a command from the tf.estimator API that is used to train the model using the data from the nested input function.  This input function is combined with a lambda to take arguments into a function that doesn't accept arguments.  I used the DNNClassifier and defined it by creating a variable called "classifier" and providing it with an instance of the DNNClassifier.  The instance was provided with the dataset's feature columns, a dense neural network (DNN) containing 30 hidden nodes in the first layer and 10 hidden nodes in the second layer, and the specification that there are three potential classes (one for each species of Iris).  The feature columns were provided as the "feature_columns" argument, the DNN with hidden nodes was provided as the "hidden_units" argument, and the three classes were provided as the "n_classes" argument.  I have included the code for this below.  A nested input function is also used to apply the testing set to the classifer.evaluate() command.  Similar to when training the model, the input function is combined with a lambda to take arguments into a function that doesn't accept arguments.
 
     *     classifier = tf.estimator.DNNClassifier(
               feature_columns=my_feature_columns,
@@ -167,7 +167,7 @@
     
  *  I will be adding more detail about these plots shortly.
 
-**2. What is the difference between a categorial column and a dense feature?**
+**2. What is the difference between a categorical column and a dense feature?**
 
 **3. Describe the feature columns that have been input to your LinearClassifier().  How would you assess the result from your initial output?  What is the purpose of adding a cross featured column?  Did your attempt to capture the interaction between age and gender and incorporate it into your model improve performance?  Include and interpret your predicted probabilities and ROC curve plots.**
 
