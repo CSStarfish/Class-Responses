@@ -8,63 +8,63 @@
 
    * 1.  BaseLine Classifier - the script uses the tf.estimator.BaselineClassifier function from the API.  To instantiate this estimator for the Iris dataset, you would write classifier = tf.estimator.BaselineClassifier(n_classes=3).  You would then use input functions for training and evaluation, but not prediction.  For training, you call classifier.train on the input function used for training; for evaluation, you calculate the model's loss value by calling classifier.evaluate on the input function used for evaluating.  For prediction, you call classifier.predict on the testing set.
    
-       *    baseline_classifier = tf.estimator.BaselineClassifier(n_classes=3)
+       *      baseline_classifier = tf.estimator.BaselineClassifier(n_classes=3)
       
-            def input_fn_training:
-              pass
-            def input_fn_evaluation:
-              pass
+              def input_fn_training:
+                pass
+              def input_fn_evaluation:
+                pass
          
-            baseline_classifier.train(input_fn=input_fn_training)
+              baseline_classifier.train(input_fn=input_fn_training)
       
-            loss_val = baseline_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
+              loss_val = baseline_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
       
-            prediction = baseline_classifier.predict(test_set)
+              prediction = baseline_classifier.predict(test_set)
 
 
    * 2.  BaseLine Estimator - the script uses the tf.estimator.BaselineEstimator function from the API.  To use this estimator for the Iris dataset, you would write estimator = tf.estimator.BaselineEstimator(head=tf.estimator.MultiLabelHead(n_classes=3)).  You would then use input functions for training and evaluation, but not prediction.  For training, you call estimator.train on the input function used for training; for evaluation, you calculate the model's loss value by calling estimator.evaluate on the input function used for evaluating.  For prediction, you call estimator.predict on the testing set.
    
-       *    baseline_estimator = tf.estimator.BaselineEstimator(head=tf.estimator.MultiLabelHead(n_classes=3))
+       *      baseline_estimator = tf.estimator.BaselineEstimator(head=tf.estimator.MultiLabelHead(n_classes=3))
       
-            def input_fn_training:
-              pass
-            def input_fn_evaluation:
-              pass
+              def input_fn_training:
+                pass
+              def input_fn_evaluation:
+                pass
          
-            baseline_estimator.train(input_fn=input_fn_training)
+              baseline_estimator.train(input_fn=input_fn_training)
       
-            loss_val = baseline_estimator.evaluate(input_fn=input_fn_evaluation)["loss"]
+              loss_val = baseline_estimator.evaluate(input_fn=input_fn_evaluation)["loss"]
       
-            prediction = baseline_estimator.predict(test_set)
+              prediction = baseline_estimator.predict(test_set)
 
 
    * 3.  Linear Classifier - the script uses the tf.estimator.LinearClassifier function from the API.  To instantiate this estimator for the Iris dataset, you would write classifier = tf.estimator.LinearClassifier(feature_columns=my_feature_columns, n_classes=3).  You would then use input functions for training, evaluation, and prediction.  For training, you call classifier.train on the input function used for training; for evaluation, you calculate the model's loss value by calling classifier.evaluate on the input function used for evaluating; for prediction, you call classifier.predict on the input function used for predicting.
 
-       *    linear_classifier = tf.estimator.LinearClassifier(feature_columns=my_feature_columns, n_classes=3)
+       *      linear_classifier = tf.estimator.LinearClassifier(feature_columns=my_feature_columns, n_classes=3)
       
-            def input_fn_training:
-              pass
-            def input_fn_evaluation:
-              pass
-            def input_fn_prediction:
-              pass
+              def input_fn_training:
+                pass
+              def input_fn_evaluation:
+                pass
+              def input_fn_prediction:
+                pass
          
-            linear_classifier.train(input_fn=input_fn_training)
+              linear_classifier.train(input_fn=input_fn_training)
       
-            loss_val = linear_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
+              loss_val = linear_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
       
-            prediction = linear_classifier.predict(input_fn=input_fn_prediction)
+              prediction = linear_classifier.predict(input_fn=input_fn_prediction)
 
 
    * 4. DNN Linear Combined Classifier - the script uses the tf.estimator.DNNLinearCombinedClassifier function from the API.  To instantiate this estimator for the Iris dataset, you must first create crossed feature columns for the Estimator's linear settings and embedding feature columns for the Estimator's DNN settings. Then, you would write classifier = tf.estimator.DNNLinearCombinedClassifier(
-   #wide settings
-   linear_feature_columns=my_crossed_feature_columns,
-   #deep settings
-   dnn_feature_columns=my_embedding_feature_columns,
-   dnn_hidden_units=[30, 10],
-   n_classes=3).  
+             #wide settings
+             linear_feature_columns=my_crossed_feature_columns,
+             #deep settings
+             dnn_feature_columns=my_embedding_feature_columns,
+             dnn_hidden_units=[30, 10],
+             n_classes=3).  
    
-   You would then use input functions for training, evaluation, and prediction.  For training, you call classifier.train on the input function used for training; for evaluation, you calculate the model's loss value by calling classifier.evaluate on the input function used for evaluating; for prediction, you call classifier.predict on the input function used for predicting.
+        You would then use input functions for training, evaluation, and prediction.  For training, you call classifier.train on the input function used for training; for evaluation, you calculate the model's loss value by calling classifier.evaluate on the input function used for evaluating; for prediction, you call classifier.predict on the input function used for predicting.
    
        *      combo_classifier = tf.estimator.DNNLinearCombinedClassifier(
                                   # wide settings
@@ -90,20 +90,20 @@
 
    * 5. Boosted Trees Classifier - the script uses the tf.estimator.BoostedTreesClassifier function from the API.  To instantiate this estimator for the Iris dataset, you would write classifier = tf.estimator.BoostedTreesClassifier(feature_columns=my_feature_columns, n_classes=3).  You would then use input functions for training, evaluation, and prediction.  For training, you call classifier.train on the input function used for training; for evaluation, you calculate the model's loss value by calling classifier.evaluate on the input function used for evaluating; for prediction, you call classifier.predict on the input function used for predicting.
 
-       *    tree_classifier = tf.estimator.BoostedTreesClassifier(feature_columns=my_feature_columns, n_classes=3)
+      *        tree_classifier = tf.estimator.BoostedTreesClassifier(feature_columns=my_feature_columns, n_classes=3)
       
-            def input_fn_training:
-              pass
-            def input_fn_evaluation:
-              pass
-            def input_fn_prediction:
-              pass
+               def input_fn_training:
+                 pass
+               def input_fn_evaluation:
+                 pass
+               def input_fn_prediction:
+                 pass
          
-            tree_classifier.train(input_fn=input_fn_training)
+               tree_classifier.train(input_fn=input_fn_training)
       
-            loss_val = tree_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
+               loss_val = tree_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
       
-            prediction = tree_classifier.predict(input_fn=input_fn_prediction)- 
+               prediction = tree_classifier.predict(input_fn=input_fn_prediction)- 
 
 
 
