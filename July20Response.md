@@ -48,35 +48,36 @@
      With regards to the cat images, perhaps the first image proved to be difficult to accurately predict because the cat was obscured by the long grass.  For the second image, maybe the model wasn't very well-trained on images of cats lying down.  The third cat image, which depicted a kitten, posed a similar complication as the third dog image.  Both had a softening blur effect that may have prevented the model from detecting important, identifying features.  Potentially, the model was unable to identify this third image as a cat because the model wasn't very well-trained on images of kittens.  To improve the model's performance, I would include more images of cats in non-standing poses, like when lying down or being held.  I would also include more pictures of cats that have bushy tails, since this could cause them to be confused for a dog. 
      
      The model also appears to have difficulty when viewing the animal from the front, rather than from a side profile (like the beagle).  Consequently, I think it would be helpful to include more images of cats and dogs taken from a frontal view.
+
+---
    
-*  Dogs:
+**Dogs:**
     
- **Beagle** 
+ **Beagle - Predicted to be a dog** 
  
    ![Beagle](Beagle.jpg)
    
-   ***Predicted to be a dog***
     
- **Papillon**  
+ **Papillon - Predicted to be a cat**  
  
    ![Papillon](Papillon.jpg)
     
-   ***Predicted to be a cat***
     
+ **Fluffy Dog - Predicted to be a cat**   
    ![Fluffy Dog](fluffydog.jpg)
     
-   ***Predicted to be a cat***
+
     
-*  Cats:
-    
+**Cats:**
+   
+ **Fluffy Cat - Predicted to be a dog**  
    ![Fluffy Cat](fluffycat.jpg)
    
-   ***Predicted to be a dog***
-    
+
+ **Grumpy Cat - Predicted to be a dog**    
    ![Grumpy Cat](grumpycat.jpg)
    
-   ***Predicted to be a dog***
    
+ **Kitten - Predicted to be a dog**  
    ![Kitten](kitten.jpg)
    
-   ***Predicted to be a dog***
