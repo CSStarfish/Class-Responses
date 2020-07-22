@@ -175,5 +175,5 @@
 
 **3. Describe the feature columns that have been input to your LinearClassifier().  How would you assess the result from your initial output?  What is the purpose of adding a cross featured column?  Did your attempt to capture the interaction between age and gender and incorporate it into your model improve performance?  Include and interpret your predicted probabilities and ROC curve plots.**
 
-*   I would assess the result from my output by analyzing the ROC curve and predicted probabilities plots.  (I will be adding more detail about this shortly).
+*   I would assess the result from my output by analyzing the ROC curve and predicted probabilities plots.  With regards to the ROC curve, if it follow the y-axis, the model is very accurate because most of its predictions were correct; if it has a slope of 1, it is quite inaccurate because the model can't really differentiate between classes. (I will be adding more detail about this shortly).
 
