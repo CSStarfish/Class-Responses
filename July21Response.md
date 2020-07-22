@@ -142,18 +142,18 @@
 *   When plotting the pair plot of the dftrain dataset in the PyCharm IDE, the scale of the y-axis prevented the plot of the "parch" variable's probability density distribution from being seen.  To resolve this issue, I replotted the pair plot in Google Colaboratory.  This allowed the plot of the "parch" probability density distribution to be visible, but the necessary y-axis scaling to do so caused the datapoints on the remainder of the plots in this row to be difficult to read.  Consequently, I have attached both plots below so that all plots can be more easily seen.
 
     **PyCharm version:**
-    [PyCharm Pair Plot](PyCharm_seaborn.png)
+    ![PyCharm Pair Plot](PyCharm_seaborn.png)
     
     **Google Colaboratory version:**
-    [Google Colaboratory Pair Plot](Colab_seaborn.png)
+    ![Google Colaboratory Pair Plot](Colab_seaborn.png)
     
 *   Below, I have attached the seaborn plot of age along with the histogram of age from the training set.
 
     **Seaborn Distribution (Age):**
-    [Seaborn Plot of Age](AgePairplot.PNG)
+    ![Seaborn Plot of Age](AgePairplot.PNG)
     
     **Histogram (Age):**
-    [Histogram of Age](AgeHist.png)
+    ![Histogram of Age](AgeHist.png)
     
  *  I will be adding more detail about these plots shortly.
 
