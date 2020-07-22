@@ -163,7 +163,7 @@
     **Histogram (Age):**
     
     ![Histogram of Age](AgeHist.png)
-    
+     
     
  *  I will be adding more detail about these plots shortly.
 
