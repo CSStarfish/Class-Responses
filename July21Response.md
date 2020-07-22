@@ -152,7 +152,7 @@
     ![Google Colaboratory Pair Plot](Colab_seaborn.png)
     
     
-*   Below, I have attached the seaborn plot of age along with the histogram of age from the training set.
+*   Below, I have attached the seaborn plot of the age probability density distribution along with the histogram of age from the training set.
 
     **Seaborn Distribution (Age):**
     
