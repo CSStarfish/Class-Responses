@@ -124,13 +124,13 @@
 
 **5. Redefine your classifier using the DNNLinearCombinedClassifier() as well as the LinearClassifier().  Retrain your model and compare the results using the three different estimators you instantiated.  Rank the three estimators in terms of their performance.**
 
-*     I have included the results for the DNNLinearCombinedClassifier() and LinearClassifier() below, as well as the original results with the DNNClassifier for reference.  Based on these results, (I will be updating the results for these new estimators shortly, and then listing them in descending order by performance).
+*   I have included the results for the DNNLinearCombinedClassifier() and LinearClassifier() below, as well as the original results with the DNNClassifier for reference.  Based on these results, (I will be updating the results for these new estimators shortly, and then listing them in descending order by performance).
 
-*     **DNNLinearCombinedClassifier Results:**
+*   **DNNLinearCombinedClassifier Results:**
 
-*     **LinearClassifier Results:**
+*   **LinearClassifier Results:**
 
-*     **DNNClassifier Results:**
+*   **DNNClassifier Results:**
 
 ---
 ---
