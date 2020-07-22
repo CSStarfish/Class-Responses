@@ -53,17 +53,17 @@
    
 **Dogs:**
     
- **Beagle - Predicted to be a dog** 
+* **Beagle - Predicted to be a dog** 
  
    ![Beagle](Beagle.jpg)
    
     
- **Papillon - Predicted to be a cat**  
+* **Papillon - Predicted to be a cat**  
  
    ![Papillon](Papillon.jpg)
     
     
- **Fluffy Dog - Predicted to be a cat**   
+* **Fluffy Dog - Predicted to be a cat**   
    ![Fluffy Dog](fluffydog.jpg)
     
 
@@ -72,14 +72,14 @@
    
 **Cats:**
    
- **Fluffy Cat - Predicted to be a dog**  
+* **Fluffy Cat - Predicted to be a dog**  
    ![Fluffy Cat](fluffycat.jpg)
    
 
- **Grumpy Cat - Predicted to be a dog**    
+* **Grumpy Cat - Predicted to be a dog**    
    ![Grumpy Cat](grumpycat.jpg)
    
    
- **Kitten - Predicted to be a dog**  
+* **Kitten - Predicted to be a dog**  
    ![Kitten](kitten.jpg)
    
