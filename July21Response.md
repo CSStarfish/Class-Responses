@@ -56,13 +56,7 @@
               prediction = linear_classifier.predict(input_fn=input_fn_prediction)
 
 
-   * 4. DNN Linear Combined Classifier - the script uses the tf.estimator.DNNLinearCombinedClassifier function from the API.  To instantiate this estimator for the Iris dataset, you must first create crossed feature columns for the Estimator's linear settings and embedding feature columns for the Estimator's DNN settings. Then, you would write classifier = tf.estimator.DNNLinearCombinedClassifier(
-             #wide settings
-             linear_feature_columns=my_crossed_feature_columns,
-             #deep settings
-             dnn_feature_columns=my_embedding_feature_columns,
-             dnn_hidden_units=[30, 10],
-             n_classes=3).  
+   * 4. DNN Linear Combined Classifier - the script uses the tf.estimator.DNNLinearCombinedClassifier function from the API.  To instantiate this estimator for the Iris dataset, you must first create crossed feature columns for the Estimator's linear settings and embedding feature columns for the Estimator's DNN settings. Then, you would write classifier = tf.estimator.DNNLinearCombinedClassifier(linear_feature_columns=my_feature_columns, dnn_feature_columns=my_feature_columns, dnn_hidden_units=[30, 10], n_classes=3).  
    
         You would then use input functions for training, evaluation, and prediction.  For training, you call classifier.train on the input function used for training; for evaluation, you calculate the model's loss value by calling classifier.evaluate on the input function used for evaluating; for prediction, you call classifier.predict on the input function used for predicting.
    
