@@ -67,7 +67,9 @@
    ![Fluffy Dog](fluffydog.jpg)
     
 
-    
+---
+   
+   
 **Cats:**
    
  **Fluffy Cat - Predicted to be a dog**  
