@@ -90,20 +90,20 @@
 
    * 5. Boosted Trees Classifier - the script uses the tf.estimator.BoostedTreesClassifier function from the API.  To instantiate this estimator for the Iris dataset, you would write classifier = tf.estimator.BoostedTreesClassifier(feature_columns=my_feature_columns, n_classes=3).  You would then use input functions for training, evaluation, and prediction.  For training, you call classifier.train on the input function used for training; for evaluation, you calculate the model's loss value by calling classifier.evaluate on the input function used for evaluating; for prediction, you call classifier.predict on the input function used for predicting.
 
-      *        tree_classifier = tf.estimator.BoostedTreesClassifier(feature_columns=my_feature_columns, n_classes=3)
+      *       tree_classifier = tf.estimator.BoostedTreesClassifier(feature_columns=my_feature_columns, n_classes=3)
       
-               def input_fn_training:
-                 pass
-               def input_fn_evaluation:
-                 pass
-               def input_fn_prediction:
-                 pass
+              def input_fn_training:
+                pass
+              def input_fn_evaluation:
+                pass
+              def input_fn_prediction:
+                pass
          
-               tree_classifier.train(input_fn=input_fn_training)
+              tree_classifier.train(input_fn=input_fn_training)
       
-               loss_val = tree_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
+              loss_val = tree_classifier.evaluate(input_fn=input_fn_evaluation)["loss"]
       
-               prediction = tree_classifier.predict(input_fn=input_fn_prediction)- 
+              prediction = tree_classifier.predict(input_fn=input_fn_prediction)- 
 
 
 
