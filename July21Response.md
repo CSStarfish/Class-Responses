@@ -124,13 +124,21 @@
 
 **5. Redefine your classifier using the DNNLinearCombinedClassifier() as well as the LinearClassifier().  Retrain your model and compare the results using the three different estimators you instantiated.  Rank the three estimators in terms of their performance.**
 
-*   I have included the results for the DNNLinearCombinedClassifier() and LinearClassifier() below, as well as the original results with the DNNClassifier for reference.  Based on these results, (I will be updating the results for these new estimators shortly, and then listing them in descending order by performance).
+*   I have included the results for the DNNLinearCombinedClassifier() and LinearClassifier() below, as well as the original results with the DNNClassifier for reference.  Based on these results, the DNNLinearCombinedClassifier and LinearClassifier both achieved the highest accuracy of approximately 0.967.  While they both share the same accuracy value, the average loss for the LinearClassifier was significantly lower than the average loss for the DNNLinearCombinedClassifier, which indicates that the LinearClassifier should be selected as the most accurate classifier for this situation.
 
-*   **DNNLinearCombinedClassifier Results:**
 
 *   **LinearClassifier Results:**
+      Accuracy: 0.967
+      Average Loss: 0.069
+
+
+*   **DNNLinearCombinedClassifier Results:**
+      Accuracy: 0.967
+      Average Loss: 0.327
 
 *   **DNNClassifier Results:**
+      Accuracy: 0.733
+      Average Loss: 0.587
 
 ---
 ---
