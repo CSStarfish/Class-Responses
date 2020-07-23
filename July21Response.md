@@ -149,19 +149,19 @@
 
 **1. Using the dftrain dataset, upload an image where you used the seaborn library to produce a sns.pairplot().  Also include a histogram of age using the training set and compare it to the seaborn plot for that same feature (variable).  What interpretation can you provide of the data based on this plot?**
 
-*   When plotting the pair plot of the dftrain dataset in the PyCharm IDE, the scale of the y-axis prevented the plot of the "parch" variable's probability density distribution from being seen.  To resolve this issue, I replotted the pair plot in Google Colaboratory.  This allowed the plot of the "parch" probability density distribution to be visible, but the necessary y-axis scaling to do so caused the datapoints on the remainder of the plots in this row to be difficult to read.  Consequently, I have attached links to both plots below so that all plots can be more easily seen (I couldn't directly include the images because GitHub couldn't render the page with file sizes this large).  By looking at the plots along the diagonal, we can see the probability density distribution of each variable.  The age, number of siblings and spouses, and fare distributions all appear to be right-skewed.  The shape of the distribution for the "parch" variable is slightly less clear, as it is bimodal, but it also appears to be right-skewed.  
+*   When plotting the pair plot of the dftrain dataset in the PyCharm IDE, the scale of the y-axis prevented the plot of the "parch" variable's probability density distribution from being seen.  To resolve this issue, I replotted the pair plot in Google Colaboratory.  This allowed the plot of the "parch" probability density distribution to be visible, but the necessary y-axis scaling to do so caused the datapoints on the remainder of the plots in this row to be difficult to read.  Consequently, I have attached links to both plots below so that all plots can be more easily seen.  By looking at the plots along the diagonal, we can see the probability density distribution of each variable.  The age, number of siblings and spouses, and fare distributions all appear to be right-skewed.  The shape of the distribution for the "parch" variable is slightly less clear, as it is bimodal, but it also appears to be right-skewed.  
 
      Clustering is prevalent in the plots of the remaining combinations of variables, except for the plots that graph age against fare.  Consequently, there doesn't seem to be any clear relationship between these two variables.  However, it may be important to note that the fare appears to mostly stay below $300.  It does appear as though there may be some sort of inverse relationship between age and the number of siblings and spouses, as older passengers tend to have a lower number of siblings and spouses.  But aside from the aforementioned clustering in their respective scatterplots, the relationships between the rest of the variables remain unclear.
 
     **PyCharm version:**
     
-    [PyCharm Pair Plot](PyCharm_seaborn.png)
+    ![PyCharm Pair Plot](PyCharm_seaborn.png)
     
     
     
     **Google Colaboratory version:**
     
-    [Google Colaboratory Pair Plot](Colab_seaborn.png)
+    ![Google Colaboratory Pair Plot](Colab_seaborn.png)
     
     
 *   Below, I have also attached links to the seaborn plot of the age probability density distribution and histogram from the training set.  Both of these plots show us that the age distribution is right-skewed because there is a long tail towards the right side of plot.  As such, there are more datapoints to the left of the mean age than there are to the right.  In the context of ages, this means that there are few older passengers, but many young passengers.  The distribution is also univariate, so the mode age of Titanic passengers occurs at the peak of the seaborn distribution/the tallest column of the histogram, at about 25-27 years old.  Because of the right skew, the median age will be slightly higher than the mode age, at approximately 28 years old.  
@@ -170,13 +170,13 @@
 
     **Seaborn Distribution (Age):**
     
-    [Seaborn Plot of Age](AgePairplot.PNG)
+    ![Seaborn Plot of Age](AgePairplot.PNG)
     
     
     
     **Histogram (Age):**
     
-    [Histogram of Age](AgeHist.png)
+    ![Histogram of Age](AgeHist.png)
      
      
 
@@ -190,11 +190,11 @@
 
     ![Accuracy of ROC Curves](accuracy_of_ROC.png)
 
-    [ROC Curve](ROC.png)
+    ![ROC Curve](ROC.png)
     
      In the case of the Titanic dataset, the ROC curve follows pretty closely to the y-axis for some time and bows quite significantly to the upper left corner.  Consequently, we can reasonably conclude that this model is quite accurate because of the large area beneath the curve.
 
-    [Predicted Probabilities Curve](pred_prob.png)
+    ![Predicted Probabilities Curve](pred_prob.png)
     
-    (I will be adding more detail about this shortly).
+     In the Titanic dataset, a '1' means the passenger survived and '0' means they did not.  The predicted probabilites curve depicts the predictions the model made of the likelihood the person survived.  Since there appears to be a mode around 0 on the plot above, the model predicted that a lot of passengers did not survive the Titanic.
 
