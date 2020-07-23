@@ -188,15 +188,15 @@
 
 *   I will add more detail to describe the feature columns shortly, as well as why adding a cross featured column is useful.
 
-*   I would assess the result from my output by analyzing the ROC curve and predicted probabilities plots.  The ROC curve depicts the model's true positive rate vs. false positive rate of predictions. The accuracy of the model can be determined by the area under this curve.  Therefore, the more the ROC curve bows to the upper left corner of the graph, the more accurate the model is likely to be (since the more the curve bows, the greater is the area under the curve).  For example, if the ROC curve follows closely to the y-axis, then the model is very accurate.  Thus, the model yields many true positives.  This concept is illustrated in the image below  On the other hand, if the ROC curve is drawn at a 45-degree angle across the graph, it is quite inaccurate because the model can't really differentiate between classes.  Thus, the model yields many false positives.  
+*   I would assess the result from my output by analyzing the ROC curve and predicted probabilities plots.  The ROC curve depicts the model's true positive rate vs. false positive rate of predictions. The accuracy of the model can be determined by the area under this curve.  Therefore, the more the ROC curve bows to the upper left corner of the graph, the more accurate the model is likely to be (since the more the curve bows, the greater is the area under the curve).  For example, if the ROC curve follows closely to the y-axis, then the model is very accurate.  Thus, the model yields many true positives.  On the other hand, if the ROC curve is drawn at a 45-degree angle across the graph, it is quite inaccurate because the model can't really differentiate between classes.  Thus, the model yields many false positives.  This concept is illustrated in the image below of various ROC curves. 
 
     ![Accuracy of ROC Curves](accuracy_of_ROC.png)
 
-    ![ROC Curve](ROC.png)
+     (I will be adding the ROC curves both prior to, and after, adding the cross featured column shortly)
     
-*    In the case of the Titanic dataset, the ROC curve follows pretty closely to the y-axis for some time and bows quite significantly to the upper left corner.  Consequently, we can reasonably conclude that this model is quite accurate because of the large area beneath the curve.
+*    In the case of the Titanic dataset prior to adding a cross featured column, the ROC curve follows pretty closely to the y-axis for some time and bows quite significantly to the upper left corner.  Consequently, we can reasonably conclude that this model is quite accurate because of the large area beneath the curve.  After adding a cross featured column, (I will add more detail to this shortly).
 
-   ![Predicted Probabilities Curve](pred_prob.png)
+     (I will be adding the predicted probability plots both prior to, and after, adding the cross featured column shortly)
     
-*    In the Titanic dataset, a '1' means the passenger survived and '0' means they did not.  The predicted probabilites curve depicts the predictions the model made of the likelihood the person survived.  Since there appears to be a mode around 0 on the plot above, the model predicted that a lot of passengers did not survive the Titanic.
+*    In the Titanic dataset, a '1' means the passenger survived and '0' means they did not.  The predicted probabilites curve depicts the predictions the model made of the likelihood the person survived.  Since there appears to be a mode around 0 on both of the above plots, the model predicted that a lot of passengers did not survive the Titanic.
 
