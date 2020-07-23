@@ -43,7 +43,24 @@
 **B. Boosted Trees continued (with model understanding)**
 
   **1. Upload your feature values contribution to predicted probability horizontal bar plot as well as your violin plot.  Interpret and discuss the two plots.  Which features appear to contribute the most to the predicted probability?**
+  
+  ![Feature Contributions](featcontributions.png)
+  
+  ![Violin Plot](violin.png)
+  
+*  Sex and age contribute the most to the passenger's predicted probability of survival.  I will be adding more detail about the plots shortly.
 
   **2. Upload at least 2 feature importance plots.  Which features are the most important in their contribution to your models predictive power?**
+  
+* **Gain-based:**
+  ![Gain](gain.png)
+  
+* **Mean Absolute DFC:**
+  ![Average](avg.png)
+
+* **Permutation:**
+  ![Permutation](permutation.png)
+  
+*  Based on these plots, sex is the most significant contributing feature in the model's predictions.  (I will be adding more detail shortly).
 
   **3. Stretch goal**
