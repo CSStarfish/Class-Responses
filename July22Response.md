@@ -10,6 +10,25 @@
 
   **3. Provide a histogram of the probabilities for the logistic regression as well as your boosted tree model.  How do you interpret the two different models?  Are their predictions essentially the same or is there some area where they are noticeable different.  Plot the probability density function of the resulting probability predictions from the two models and use them to further illustrate your argument.  Include the ROC plot and interpret it with regard to the proportion of true to false positive rates, as well as the area under the ROC curve.  How does the measure of the AUC reflect upon the predictive power of your model?**
 
+*  **Predicted Probability Histogram - Logistic Regression:**
+
+  ![Log Histogram](linear_predictions.png)
+
+*  **Predicted Probability Histogram - Boosted Trees:**
+
+  ![Boosted Trees Histogram]()
+
+
+*  **Predicted Probability Density Function - Logistic Regression:**
+
+*  **Predicted Probability Density Function - Boosted Trees:**
+
+
+*  **Predicted Probability Density Function - Logistic Regression:**
+
+  ![Log ROC](linear_ROC.png)
+
+*  **Predicted Probability Density Function - Boosted Trees:**
 
 ---
 ---
