@@ -186,6 +186,8 @@
 
 **3. Describe the feature columns that have been input to your LinearClassifier().  How would you assess the result from your initial output?  What is the purpose of adding a cross featured column?  Did your attempt to capture the interaction between age and gender and incorporate it into your model improve performance?  Include and interpret your predicted probabilities and ROC curve plots.**
 
+*   I will add more datil to describe the feature columns shortly, as well as why adding a cross featured column is useful.
+
 *   I would assess the result from my output by analyzing the ROC curve and predicted probabilities plots.  The ROC curve depicts the model's true positive rate vs. false positive rate of predictions. The accuracy of the model can be determined by the area under this curve.  Therefore, the more the ROC curve bows to the upper left corner of the graph, the more accurate the model is likely to be (since the more the curve bows, the greater is the area under the curve).  For example, if the ROC curve follows closely to the y-axis, then the model is very accurate.  Thus, the model yields many true positives.  This concept is illustrated in the image below  On the other hand, if the ROC curve is drawn at a 45-degree angle across the graph, it is quite inaccurate because the model can't really differentiate between classes.  Thus, the model yields many false positives.  
 
     ![Accuracy of ROC Curves](accuracy_of_ROC.png)
