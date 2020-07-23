@@ -164,7 +164,9 @@
     [Google Colaboratory Pair Plot](Colab_seaborn.png)
     
     
-*   Below, I have also attached links to the seaborn plot of the age probability density distribution and the histogram of age from the training set.
+*   Below, I have also attached links to the seaborn plot of the age probability density distribution and histogram from the training set.  Both of these plots show us that the age distribution is right-skewed because there is a long tail towards the right side of plot.  As such, there are more datapoints to the left of the mean age than there are to the right.  In the context of ages, this means that there are few older passengers, but many young passengers.  The distribution is also univariate, so the mode age of Titanic passengers occurs at the peak of the seaborn distribution/the tallest column of the histogram, at about 25-27 years old.  Because of the right skew, the median age will be slightly higher than the mode age, at approximately 28 years old.  
+
+     Although the probability density distribution and histogram convey the same key information about the age distribution of Titanic passengers, they do differ from each other in that the probability density distribution depicts continous data while the histogram depicts discrete data.
 
     **Seaborn Distribution (Age):**
     
@@ -176,8 +178,7 @@
     
     [Histogram of Age](AgeHist.png)
      
-    
- *  I will be adding more detail about these plots shortly.
+     
 
 **2. What is the difference between a categorical column and a dense feature?**
 
