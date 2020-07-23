@@ -9,6 +9,8 @@
 *  A dense feature is a Keras layer that transforms the categorical feature column value into a numerical value via one-hot-encoding.  For example, running the lines of code in the question would cause all feature columns to be converted from a categorical column to a one-hot-encoded column.  Not only is this useful for the model to make predictions, as mentioned previously, but it also allows us to easily view which features are absent and where they are located by locating the zeroes in the transformed data.  This also allows us to view which features are most common and where they are located.
 
   **3. Provide a histogram of the probabilities for the logistic regression as well as your boosted tree model.  How do you interpret the two different models?  Are their predictions essentially the same or is there some area where they are noticeable different.  Plot the probability density function of the resulting probability predictions from the two models and use them to further illustrate your argument.  Include the ROC plot and interpret it with regard to the proportion of true to false positive rates, as well as the area under the ROC curve.  How does the measure of the AUC reflect upon the predictive power of your model?**
+  
+  (I will be adding more detail about this shortly).
 
 *  **Predicted Probability Histogram - Logistic Regression:**
 
