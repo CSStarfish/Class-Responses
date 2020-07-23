@@ -194,7 +194,7 @@
     
 *     In the case of the Titanic dataset, the ROC curve follows pretty closely to the y-axis for some time and bows quite significantly to the upper left corner.  Consequently, we can reasonably conclude that this model is quite accurate because of the large area beneath the curve.
 
-    ![Predicted Probabilities Curve](pred_prob.png)
+   ![Predicted Probabilities Curve](pred_prob.png)
     
 *     In the Titanic dataset, a '1' means the passenger survived and '0' means they did not.  The predicted probabilites curve depicts the predictions the model made of the likelihood the person survived.  Since there appears to be a mode around 0 on the plot above, the model predicted that a lot of passengers did not survive the Titanic.
 
