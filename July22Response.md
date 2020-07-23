@@ -21,6 +21,8 @@
 
 *  **Predicted Probability Density Function - Logistic Regression:**
 
+  ![Log PDF](linear_pdf.png)
+
 *  **Predicted Probability Density Function - Boosted Trees:**
 
 
