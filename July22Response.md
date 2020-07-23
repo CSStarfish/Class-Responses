@@ -16,7 +16,7 @@
 
 *  **Predicted Probability Histogram - Boosted Trees:**
 
-  ![Boosted Trees Histogram]()
+  ![Boosted Trees Histogram](boosted_predictions.png)
 
 
 *  **Predicted Probability Density Function - Logistic Regression:**
@@ -25,12 +25,15 @@
 
 *  **Predicted Probability Density Function - Boosted Trees:**
 
+  ![Boosted PDF](boosted_pdf.png)
 
 *  **Predicted Probability Density Function - Logistic Regression:**
 
   ![Log ROC](linear_ROC.png)
 
 *  **Predicted Probability Density Function - Boosted Trees:**
+
+  ![Boosted ROC](boosted_ROC.png)
 
 ---
 ---
