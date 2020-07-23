@@ -118,7 +118,7 @@
 
 **5. Redefine your classifier using the DNNLinearCombinedClassifier() as well as the LinearClassifier().  Retrain your model and compare the results using the three different estimators you instantiated.  Rank the three estimators in terms of their performance.**
 
-*   I have included the results for the DNNLinearCombinedClassifier() and LinearClassifier() below, as well as the original results with the DNNClassifier for reference.  Based on these results, the DNNLinearCombinedClassifier and LinearClassifier both achieved the highest accuracy of approximately 0.967.  While they both share the same accuracy value, the average loss for the LinearClassifier was significantly lower than the average loss for the DNNLinearCombinedClassifier, which indicates that the LinearClassifier should be selected as the most accurate classifier for this situation.
+*   I have included the results for the DNNLinearCombinedClassifier() and LinearClassifier() below, as well as the original results with the DNNClassifier for reference.  Based on these results, the DNNLinearCombinedClassifier and LinearClassifier both achieved the highest accuracy of approximately 0.967.  While they both shared the same accuracy value, the average loss for the LinearClassifier was significantly lower than the average loss for the DNNLinearCombinedClassifier.  The average loss for the LinearClassifier was approximately 0.069 and the average loss for the DNNLinearCombinedClassifier was approximately 0.326, which indicates that the LinearClassifier is the most accurate classifier for this situation because the accuracy of a model is inversely proportional to its loss value.
 
 
 *   **LinearClassifier Results:**
@@ -141,7 +141,7 @@
 
 **1. Using the dftrain dataset, upload an image where you used the seaborn library to produce a sns.pairplot().  Also include a histogram of age using the training set and compare it to the seaborn plot for that same feature (variable).  What interpretation can you provide of the data based on this plot?**
 
-*   When plotting the pair plot of the dftrain dataset in the PyCharm IDE, the scale of the y-axis prevented the plot of the "parch" variable's probability density distribution from being seen.  To resolve this issue, I replotted the pair plot in Google Colaboratory.  This allowed the plot of the "parch" probability density distribution to be visible, but the necessary y-axis scaling to do so caused the datapoints on the remainder of the plots in this row to be difficult to read.  Consequently, I have attached links to both plots below so that all plots can be more easily seen (I couldn't directly include the images because GitHub couldn't render the page with file sizes this large).
+*   When plotting the pair plot of the dftrain dataset in the PyCharm IDE, the scale of the y-axis prevented the plot of the "parch" variable's probability density distribution from being seen.  To resolve this issue, I replotted the pair plot in Google Colaboratory.  This allowed the plot of the "parch" probability density distribution to be visible, but the necessary y-axis scaling to do so caused the datapoints on the remainder of the plots in this row to be difficult to read.  Consequently, I have attached links to both plots below so that all plots can be more easily seen (I couldn't directly include the images because GitHub couldn't render the page with file sizes this large).  By looking at the plots along the diagonal, we can see the probability density distribution of each variable.
 
     **PyCharm version:**
     
@@ -171,7 +171,7 @@
 
 **2. What is the difference between a categorical column and a dense feature?**
 
-*   Dense features identify the absence of a feature and provide the specific space where that feature is missing by populating the dataset with zeroes.  (I will be adding more detail about this shortly).
+*   Categorical columns store features with non-numerical values.  You can then inspect the data stored within these categorical feature columns using a DenseFeatures Keras layer.  However, DenseFeatures layers require a dense tensor paramter, so you would first need to convert the feature column to an indicator column.  Dense features identify the absence of a feature and allow the user to locate the specific space where that feature is missing by populating the dataset with zeroes.  The main difference between a categorical column and a dense feature is that the dense feature represents the non-numerical value of the categorical column as a numerical value through one-hot encoding.
 
 **3. Describe the feature columns that have been input to your LinearClassifier().  How would you assess the result from your initial output?  What is the purpose of adding a cross featured column?  Did your attempt to capture the interaction between age and gender and incorporate it into your model improve performance?  Include and interpret your predicted probabilities and ROC curve plots.**
 
