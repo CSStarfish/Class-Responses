@@ -10,7 +10,7 @@
 
   **3. Provide a histogram of the probabilities for the logistic regression as well as your boosted tree model.  How do you interpret the two different models?  Are their predictions essentially the same or is there some area where they are noticeable different.  Plot the probability density function of the resulting probability predictions from the two models and use them to further illustrate your argument.  Include the ROC plot and interpret it with regard to the proportion of true to false positive rates, as well as the area under the ROC curve.  How does the measure of the AUC reflect upon the predictive power of your model?**
   
-  (I will be adding more detail about this shortly).
+*  Overall, both models predicted very similarly to each other.  However, there were some slight differences.  For example, the boosted tree model predicted that more passengers survived and, consequently, fewer passengers were predicted to not survive the Titanic than in the logistic regression model.  I have attached histograms, probability density functions, and ROC curves (with further description for each) of the predicted probabilities of survival below.
 
 *  **Predicted Probability Histogram - Logistic Regression:**
 
@@ -19,6 +19,9 @@
 *  **Predicted Probability Histogram - Boosted Trees:**
 
   ![Boosted Trees Histogram](boosted_predictions.png)
+
+*  The histograms indicate that both models are potentially bimodal, but this is more clear in the boosted tree model.  While the primary mode for both models is approximately 0.1, indicating that most passengers did not survive, the boosted tree model has a secondary mode at approximately 1.0, indicating that a rather significant portion of the passengers did survive.  There may also be a secondary mode for the logistic regression model at approximately 0.6, which indicates that this linear model is less confident in its predictions that these passengers survived.  Given the boosted tree model's secondary mode was approximately 1.0, we can deduce that the boosted tree model is much more confident in its predictions that these passengers survived.
+
 
 
 *  **Predicted Probability Density Function - Logistic Regression:**
@@ -29,13 +32,21 @@
 
   ![Boosted PDF](boosted_pdf.png)
 
-*  **Predicted Probability Density Function - Logistic Regression:**
+*  The probability density functions confirm that both models are bimodal, as previously indicated by the histograms.  These continous shape of the probability density plots also make the range of probabilities over which the modes occur more clear.  For example, the second peak in the logistic regression model spans a wider set of probabilities than is apparent in the logistic regression model's histogram.  The primary mode for both models remains at approximately 0.1, the boosted tree model's secondary mode appears to be centered at approximately 0.9, and the secondary mode for the logistic regression model still peaks at approximately 0.6.
+
+
+
+*  **Predicted Probability ROC - Logistic Regression:**
 
   ![Log ROC](linear_ROC.png)
 
-*  **Predicted Probability Density Function - Boosted Trees:**
+*  **Predicted Probability ROC - Boosted Trees:**
 
   ![Boosted ROC](boosted_ROC.png)
+
+*  The ROC curves for both models are very similar, which indicates both models have similarly accurate predictions.  This is confirmed by the strong similarity between the shapes of the predicted probability distributions displayed in the histograms and probability density functions for both models.  However, the boosted tree model's ROC curve appears to follow the y-axis slightly longer than the logistic regression model's ROC curve.  The logistic regression model mostly appears to begin diverging around a true positive prediction (i.e., correct prediction) rate of 0.60, but this doesn't appear to begin until a true positive prediction rate of approximately 0.70.  Consequently, the boosted tree model appears to be more accurate in its Titanic survival predictions than the logistic regression model.
+
+
 
 ---
 ---
@@ -62,5 +73,3 @@
   ![Permutation](permutation.png)
   
 *  Based on these plots, sex is the most significant contributing feature in the model's predictions.  (I will be adding more detail shortly).
-
-  **3. Stretch goal**
