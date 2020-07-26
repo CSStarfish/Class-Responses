@@ -1,0 +1,13 @@
+# Project 3
+
+## Predicting Population Based on Aerial Photography
+
+  For this project, I trained a dense neural network (DNN) and convolutional neural network (CNN) model to predict the population of regions shown in aerial pictures taken of Accra, the capital of Ghana. To do so, we were provided with .zip files that contained 10,000 pictures of Accra taken from an airplane, as well as a .csv file containing the population of the regions in each picture.  I decided that 10% of these should be used for model validation, so I first extracted 9,000 of the pictures into a training dataset folder and I extracted the remaining 1,000 into a testing datset folder.  Next, I sorted the files to ensure they followed the same order as the .csv file containing the corresponding population labels.  I then opened each picture in a NumPy array and stored the array as my training dataset.  The testing dataset was created in a similar manner, by sorting the files in the testing dataset folder, opening each picture in a NumPy array, and storing this array as my testing set. 
+  
+  I then created a NumPy array out of the population data in the .csv file, extracted the first 9,000 entries as training labels, and extracted the final 1,000 entries as testing labels.
+  
+  Since the full-size training and testing datasets were so large, I first created a "toy" training and testing set to determine if my first DNN model was functional.  My first toy training set contained the first 12 training pictures and my first toy testing set contained the first 8 testing pictures. Then, I extracted their respective population labels to create "toy" training and testing population sets.  I also rescaled the toy image datasets by dividing by 255.  This was an important step to take to improve the model's performance because it converts the bytes to values between 0 and 1, which makes it easier/more efficient for the computer to process and make calculations.
+  
+  After processing the data, I constructed a DNN that contained 7 layers (I may be adjusting this later).  The first layer flattened the input into a one-dimensional array and the remaining layers were dense layers.  Each of the first five dense layers used the ReLU activation function, which prevents negative neural outputs from skewing results in subsequent layers by changing negative values to zero.  These five layers began with 128 units and steadily decreased by a factor of 2.  The last layer contained one unit, as this layer was used to output the model's prediction. 
+  
+  The next step involved selecting a compiler, and I ultimately tested four: one that used the Adam optimizer funtion and three that used the RMSProp optimizer with varying initial learning rates (i.e, 0.001, 0.01, and 0.1).  
