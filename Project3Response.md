@@ -16,21 +16,32 @@
 
 ![First Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/First%20Model%20Fit.png)
 
-* For the first model fitting, I tried 5 epochs, 2 steps per epoch, and a batch size of 10.  
+* For the first model fitting, I arbitrarily selected 5 epochs, 2 steps per epoch, and a batch size of 10.  The model was highly overfit, as the training loss was only approximately 359, while the testing loss was much higher at approximately 4,359.  This also didn't seem to be the best fit, as the training loss actually began increasing.  Consequently, I decided to change the batch size for the next fitting.
 
 ![Second Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Second%20Model%20Fit.png)
 
+* In the second fitting, I kept the 5 epochs and 2 steps per epoch, but I decreased the batch size to 8.  Not only was this model still highly overfit, but the testing loss increased to approximately 5,843.  However, the training loss values more consistent across epochs, so I deduced that changing the batch size allowed this to happen.  Consequently, I decided to try increasing the batch size for the next fitting.
+
 ![Third Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Third%20Model%20Fit.png)
+
+* For the third fitting, I again kept the 5 epochs and 2 steps per epoch, but I increased the batch size to 12.  Doing so provided, thus far, the lowest testing loss (about 4,083).  This fitting also seemed to be strong because the testing loss curve appears to be decreasing, overall.
 
 ![Fourth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Fourth%20Model%20Fit.png)
 
+* Since increasing the batch size seemed to be a good choice, I kept the 5 epochs and 2 steps per epoch for the fourth fitting, and I also increased the batch size to 14.  Unfortunately, this increased the testing loss to over about 6,604.  I realized that a batch size of 12 was probably most optimal, so I decided to try altering the steps per epoch for the next model fitting.
+
 ![Fifth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Fifth%20Model%20Fit.png)
+
+*  In the fifth fitting, I kept the 5 epochs and batch size of 14, but increased the steps per epoch to 5. Unfortunately, this increased the testing loss to over about 6,604.  I realized that a batch size of 12 was probably most optimal, so I decided to try altering the steps per epoch for the next model fitting.  This proved to be the most optimal model fitting out of all fittings I performed (both on the DNN and CNN), with a testing loss of about 2,457.
 
 ![Sixth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Sixth%20Model%20Fit.png)
 
-![Seventh Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Seventh%20Model%20Fit.png)
+*  Because 5 steps per epoch worked so well, I kept the 5 steps per epoch and batch size of 14, but tried increasing the number of epochs to ten. However, this lead to a lot of fluctuation in the testing and training loss, so I decided to try one more fitting.
 
-   The next three fittings to the DNN model used the compiler with the Adam optimizer function.  Rather than setting an initial learning rate, I used the default initial learning rate (0.01), but I continued using the MAE and MSE metrics.  The loss was again set to minimize the MSE.  Unfortunately, I was unable to perform more fittings because my computer ran out of memory and output errors that it couldn't allocate the space to finish carrying out further model fittings.  I have attached plots of the training and testing loss values across each epoch, as well as descriptions of each, below.
+![Sixth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Sixth%20Model%20Fit.png)
+
+*  Since I had previously tried increasing the steps per epoch, I then decided to decrease the number of epochs to 2 and returned the batch size to its original 10, as well as the number of epochs to 5. However, this lead to a lot of fluctuation in the testing and training loss, so I decided to try one more fitting.  This led to even more fluctuation, so I stopped here and decided that the fifth fit was the best for this version of the model.
+
 
 **DNN, Adam Optimizer**
 
@@ -42,7 +53,7 @@
 
    After using these compilations of the DNN model, I decided to try a CNN model so that the model could make better predictions based on the key features highlighted by the convolving and pooling layers.  The CNN contained 10 layers, with the first layer being a data preprocessing layer that rescaled the images by dividing the bytes by 255 (similar to the division performed prior to implementing the DNN model).  The next six layers consisted of pairs of Conv2D and MaxPooling2D layers (i.e., there were three Conv2D and three MaxPooling2D layers).  The first Conv2D layer contained 16 filters, which were 3x3 arrays, and the number of filters doubled in each of the next two Conv2D layers.  All three of the Conv2D layers utilized the ReLU activation function, and the first Conv2D layer set the input image size to 480x480 for consistency (the input images are already this size, but it's good practice to include this argument in the initial layer).  Each of the MaxPooling2D layers reduced the image to a quarter of its previous size.  The next layer, after these six convolutional layers, is a Flatten layer.  This "flattens" the input into a one-dimensional array before passing the data into the final two Dense layers.  The first dense layer contained 512 units and also used the ReLU activation function, while the final dense layer only contained one unit because this layer output the model's final prediction.
    
-   The first nine fittings to the CNN model again used the RMS Prop optimizer (with an initial learning rate of 0.001) in the compiler.  I tried to complete ten fittings with this first compiler, but I encountered errors about difficulty with memory allocation, so I stopped at nine.  I have attached the fittings below, as well as descriptions of each.
+   The first nine fittings to the CNN model again used the RMS Prop optimizer (with an initial learning rate of 0.001) in the compiler.  I tried to complete ten fittings with this first compiler, but I encountered errors about difficulty with memory allocation, so I stopped at nine.  I have attached plots of the loss values for the fittings below, but none of these proved to be more effective than the fifth fitting of the DNN, so I disregarded them.  Interestingly, the fitting that yielded the lowest loss value among the CNN model fittings shared the same arguments as the fifth DNN model fitting (I have described this further under the fourth plot below).
    
 **CNN, RMS Prop Optimizer**
 
@@ -53,6 +64,8 @@
 ![Thirteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Thirteenth%20Model%20Fit.png)
 
 ![Fourteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Fourteenth%20Model%20Fit.png)
+
+*  While still having a higher loss value than the fifth fitting of the DNN, the fourth CNN fitting proved to be the most accurate of the CNN models I tested.  The loss value for this fitting was approximately 4,226.  I used 5 epochs, 5 steps per epoch, and a batch size of 14.  Interestingly, these were the same arguments provided to the fifth fitting of the DNN.  Likewise, the fifth DNN fitting also used the RMS Prop optimizer.
 
 ![Fifteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Fifteenth%20Model%20Fit.png)
 
@@ -65,7 +78,7 @@
 ![Nineteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Nineteenth%20Model%20Fit.png)
 
    
-   I was able to complete ten fittings to the CNN model when I used the Adam optimizer (with the default initial learning rate of 0.01) in the compiler.  I have attached the fittings below, as well as a description of each.
+   I was able to complete ten fittings to the CNN model when I used the Adam optimizer (with the default initial learning rate of 0.01) in the compiler.  I have attached plots of the fittings' respective loss values below, but these again proved to be less effective than the fifth fitting of the DNN, so I disregarded them.
    
 **CNN, Adam Optimizer**
 
