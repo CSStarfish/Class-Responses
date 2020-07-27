@@ -82,5 +82,10 @@
 ![Twenty-Sixth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Sixth%20Model%20Fit.png)
 
 ![Twenty-Seventh Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Seventh%20Mode%20Fit.png)
+
+![Twenty-Eighth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Eighth%20Model%20Fit.png)
+
+![Twenty-Ninth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Ninth%20Model%20Fit.png)
+   
    
    Interestingly, the lowest MSE loss value on the testing set occurred with the DNN model.  Considering the input dataset consisted of images, I had assumed the CNN model would prove to be the most accurate model.  The lowest MSE loss for the DNN occurred with the fifth fitting (using the RMS Prop-optimized compiler), which yielded a loss of approximately 2,457.  On the other hand, the lowest MSE loss for the CNN occurred with the fourth fitting (also using the RMS Prop-optimized compiler), which yielded a loss of approximately 4,226.  Overall, the DNN and CNN model seemed to be pretty consistent with each other in their predictive power.
