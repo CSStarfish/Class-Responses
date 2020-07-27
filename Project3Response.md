@@ -42,6 +42,45 @@
    
    The first nine fittings to the CNN model again used the RMS Prop optimizer (with an initial learning rate of 0.001) in the compiler.  I tried to complete ten fittings with this first compiler, but I encountered errors about difficulty with memory allocation, so I stopped at nine.  I have attached the fittings below, as well as descriptions of each.
    
+**CNN, RMS Prop Optimizer**
+
+![Eleventh Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Eleventh%20Model%20Fit.png)
+
+![Twelfth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twelfth%20Model%20Fit.png)
+
+![Thirteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Thirteenth%20Model%20Fit.png)
+
+![Fourteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Fourteenth%20Model%20Fit.png)
+
+![Fifteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Fifteenth%20Model%20Fit.png)
+
+![Sixteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Sixteenth%20Model%20Fit.png)
+
+![Seventeenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Seventeenth%20Model%20Fit.png)
+
+![Eighteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Eighteenth%20Model%20Fit.png)
+
+![Nineteenth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Nineteenth%20Model%20Fit.png)
+
+   
    I was able to complete ten fittings to the CNN model when I used the Adam optimizer (with the default initial learning rate of 0.01) in the compiler.  I have attached the fittings below, as well as a description of each.
+   
+**CNN, Adam Optimizer**
+
+![Twentieth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twentieth%20Model%20Fit.png)
+
+![Twenty-First Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-First%20Model%20Fit.png)
+
+![Twenty-Second Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Second%20Model%20Fit.png)
+
+![Twenty-Third Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Third%20Model%20FIt.png)
+
+![Twenty-Fourth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Fourth%20Model%20Fit.png)
+
+![Twenty-Fifth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Fifth%20Model.png)
+
+![Twenty-Sixth Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Sixth%20Model%20Fit.png)
+
+![Twenty-Seventh Fit](https://github.com/CSStarfish/Machine-Learning/blob/master/Project%203%20Plots/Twenty-Seventh%20Mode%20Fit.png)
    
    Interestingly, the lowest MSE loss value on the testing set occurred with the DNN model.  Considering the input dataset consisted of images, I had assumed the CNN model would prove to be the most accurate model.  The lowest MSE loss for the DNN occurred with the fifth fitting (using the RMS Prop-optimized compiler), which yielded a loss of approximately 2,457.  On the other hand, the lowest MSE loss for the CNN occurred with the fourth fitting (also using the RMS Prop-optimized compiler), which yielded a loss of approximately 4,226.  Overall, the DNN and CNN model seemed to be pretty consistent with each other in their predictive power.
