@@ -16,6 +16,7 @@
 13. [Extra Credit 2 (July 24)](https://csstarfish.github.io/Machine-Learning/ExtraCreditResponse2)
 14. [Project 3, Prediction Examples](https://csstarfish.github.io/Machine-Learning/Project3Predictions)
 15. [July 29, Response](https://csstarfish.github.io/Machine-Learning/July29Response)
+16. [July 30, Response](https://csstarfish.github.io/Machine-Learning/July30Response)
 
 
 
