@@ -12,7 +12,7 @@
 
 * **Training and Validation Loss**
 
-![Embedding Loss](Embedding Loss.png)
+![Embedding Loss](EmbeddingLoss.png)
 
 * **Training and Validation Accuracy**
 
