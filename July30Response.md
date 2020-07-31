@@ -11,6 +11,7 @@
 *  Aside from using "Romeo: " as the output starter in the TensorFlow link exercise, I also used "Juliet: " and "Benvolio: " to continue with the Romeo & Juliet theme.  (I will be adding more detail shortly).  I have attached the corresponding generated scripts below. 
 
 * **Juliet:** 
+
 JULIET: 'tis wonterful wom
 Of transforth, my lord are green-lands!
 Come, you must not on us. Show, my lord;
@@ -42,7 +43,9 @@ Begid thee not so sorry and proser them;
 By her confessed with the dispass to execute.
 What whith 
 
+
 * **Benvolio:**
+
 BENVOLIO: leave your gates,
 Prepost: my wisdom for him, friar,
 Or, as the glasses with thee my incomfincency
