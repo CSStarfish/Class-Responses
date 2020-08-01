@@ -3,6 +3,7 @@
   **1. Pick two or three news sources and select a few news titles from their feed (about 5 is likely enough).  For example you could select CNN, Fox News, MSNBC, NPR, PBS, Al Jazeera, RT (Russia Today), Deutsche Welle, Facebook, BBC, France24, CCTV, NHK World or another source you wish you analyze.  Run your sarcasm model to predict whether the titles are interpreted as sarcastic or not.  Analyze the results and comment on the different news sources you have selected.**
   
 * I decided to try out news titles from a range of political viewpoints, so I selected five titles each from MSNBC (more liberal), Fox News (more conservative), and PBS (more independent).  I then decided to try out another set of five titles from a satirical news source, The Onion, to see how accurate the model would be on titles I knew were meant to be sarcastic.  The model then predicted a floating point value between 0 and 1, with a number closer to 1 indicating that the article headline is sarcastic and a number closer to 0 indicating the article headline is factual.  The tables below display the results, as well as the corresponding headlines.  I thought it was really interesting to see that the model interpreted PBS as the most sarcastic news source, especially since The Onion is meant to be a sarcastic news source and PBS seems to be the most neutral of the real news sources I selected.  I also thought it was really interesting that the model interpreted The Onion to be just as sarcastic as MSNBC and Fox News.  In fact, the model didn't even think that articles from The Onion were really sarcastic at all, as its average prediction score was less than 0.5, at approximately 0.2.
+
 | News Source | Article 1 Prediction | Article 2 Prediction | Article 3 Prediction | Article 4 Prediction | Article 5 Prediction | Average Prediction |
 |-------------|----------------------|----------------------|----------------------|----------------------|----------------------|--------------------|
 | MSNBC       | 7.3306270e-02        | 1.8061158e-08        | 8.1769675e-09        | 1.1707650e-08        | 9.9954504e-01        | ~0.2               |
@@ -10,12 +11,15 @@
 | PBS         | 1.1247207e-07        | 9.9144883e-05        | 8.3452953e-08        | 9.9997294e-01        | 9.9573344e-01        | ~0.4               |
 | The Onion   | 5.6049582e-03        | 6.9782567e-07        | 4.8915293e-08        | 9.9894577e-01        | 1.4838601e-04        | ~0.2               |
 
+
 | News Source | Article 1 Headline                                                                                | Article 2 Headline                                                           | Article 3 Headline                                                                   | Article 4 Headline                                                                         | Article 5 Headline                                                                                              |
 |-------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | MSNBC       | ‘Faithless commander-in-chief’: Steve Schmidt blasts  Trump for his stance on Russia              | How Trump is slowing down the post office  in the year of the mail-in ballot | Rick Stengel calls the removal of U.S. troops  from Germany ‘Vladimir Putin’s dream’ | Why did Trump push for $2 billion for the FBI building  in his coronavirus relief package? | Ron Johnson, head of Sen. oversight committee, benefited  financially from policies he backed, claims new group |
 | Fox News    | Homeland Security chief slaps down 'absolutely  backward' claim federal agents provoking violence | Democrat accuses Republican of Big Tech  'conspiracy,' he snaps back         | Why Carlson says he's concerned over  'most consequential VP pick' in history        | Bill Gates sides with President Trump  on reopening schools amid pandemic                  | Colorado restaurant owners who defied lockdown close  their doors, cite 'disheartening' restrictions            |
 | PBS         | McConnell: Some Republicans think ‘we have  already done enough’ pandemic aid                     | House lawmakers grill tech CEOs over  possible anti-competitive practices    | As a virus ravages the world, antibiotic  makers are in disarray                     | Russia bounty reports, U.S. troop movements put  Trump-Putin relationship in spotlight     | Is U.S. regulatory framework capable of reining in  big tech companies?                                         |
 | The Onion   | Kanye Forced To Sleep In Separate Hyperbaric Chamber  After Kim Kicks Him Out Of Geodesic Dome    | Pros And Cons Of Banning TikTok                                              | Happiness In Selfie Almost Looks Real                                                | Scientists Locate Impact Crater From Asteroid  That Destroyed Roman Empire                 | L.A. Designates Open-Air Dining Areas Along  101 Freeway Media                                                  |
+  
+  
   
 **B. Text generation with an RNN**
 
@@ -94,6 +98,8 @@
       MENENIUS:
       Very truth,--O foul time--
       With these your heads, 
+  
+  
   
 **C. Neural machine translation with attention**
 
