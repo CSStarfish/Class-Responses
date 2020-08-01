@@ -31,14 +31,22 @@
 
 ![Initial Loss](Initial_loss.png)
 
+*  Prior to stacking two LSTM layers within my model, the loss steadily increased over time for the testing/validation text dataset while the loss steadily decreased for the training text dataset.  Although the testing loss generally decreased across the first two epochs, the model was still not very accurate at that time because the model was underfit.  In other words, the model had not been run long enough to even pick up on patterns in the training set.  This underfitting is also evidenced by the testing loss actually being lower than the training loss in the first epoch.  However, the model appears to be overfitting for the remainder of the epochs, as the training loss switched to being lower than the training loss from then on.
+
 * **Initial Training and Validation Accuracy**
 
 ![Initial Accuracy](Initial_acc.png)
+
+*  The testing/validation accuracy prior to stacking two LSTM layers was quite steady over time (at around 0.85), while the training accuracy prior to stacking two LSTM layers inreased rapidly in the first epoch and continued to steadily rise over time to just over 0.95.  It was interesting to see that the testing accuracy was so high initially, at approximately 0.80.  However, as mentioned in the description of the loss plot, the model was underfit at this time.  This underfitting can also be seen in the accuracy plots, as the training accuracy was actually lower than the testing accuracy for the first epoch.  However, after the first epoch, the model became overfit as the training accuracy quickly became higher than the testing accuracy.  It was also interesting to note that the testing accuracy was so stable over time, but it appeared to begin slightly decreasing around the eighth epoch.
 
 * **Additional Layer Training and Validation Loss**
 
 ![Second Loss](Second_loss.png)
 
+*  After stacking two LSTM layers within my model, the testing/validation loss not only increased more than the testing/validation loss prior to stacking two LSTM layers (the initial model increased to just under 0.5 and the second model with stacked LSTM layers increased to just over 0.55), but it also appeared to increase much more rapidly over time.  Otherwise, the losses after stacking the two LSTM layers were very similar to the losses prior to stacking the layers.  For example, both models were underfit for the first epoch and became overfit shortly thereafter.  In addition, the training loss curves both steadily decreased over time, while the testing loss curves decreased for the first epoch and then began increasing for the remaining epochs.
+
 * **Additional Layer Training and Validation Accuracy**
 
 ![Second Accuracy](Second_acc.png)
+
+*  
