@@ -25,7 +25,7 @@
 
   **1. Use the generate_text() command at the end of the exercise to produce synthetic output from your RNN model.  Run it a second time and review the output.  How has your RNN model been able to “learn” and “remember” the shakespeare text in order to reproduce a similar output?**
   
-*  Aside from using "Romeo: " as the output starter in the TensorFlow link exercise, I also used "Juliet: " and "Benvolio: " to continue with the Romeo & Juliet theme.  (I will be adding more detail shortly).  I have attached the corresponding generated scripts below. 
+*  Aside from using "Romeo: " as the output starter in the TensorFlow link exercise, I also used "Juliet: " and "Benvolio: " to continue with the Romeo & Juliet theme.  The RNN appeared to learn and remember the type of vocabulary that appears in Shakespeare's writings quite well, but the sentences didn't really make sense.  Although a few words appeared to be nonsensical, I wouldn't discredit the model for this reason because Shakespeare often used self-invented words within his plays.  I have attached the corresponding generated scripts below.  An RNN is able to do this by "remembering" the characters it has previously seen in the input text and then predicting what it expects to see next.  First, the input text is divided into sequences, and the target includes a sequence of this same size, but shifted one character over from the respective input sequence.  The first layer in the RNN is an embedding input layer, which will match the words up to dense embedding vectors.  The next layer is called a "GRU", which is a type of RNN.  In this particular model, there were 1,024 units in the RNN GRU layer.  The final layer is a Dense layer, which provides the prediction output.
 
 * Juliet: 
 
