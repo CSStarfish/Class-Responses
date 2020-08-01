@@ -1,0 +1,5 @@
+#Project 4
+
+##Generating A TV Script
+
+This week's task was to generate a script based off of text we provided from a movie, TV show, or song of choice.  Our group decided to select a few episodes from *The Office*, but then realized that this text compilation was of insufficient length for the model to recreate a comprehensible script.  Next, we decided to add the script to the 2005 edition of *Pride and Prejudice*, as we were curious how the script would look after the model based its text generation off of two completely different genres.  However, this produced complete gibberish, which was likely a result of the model being unable to pick up on the patterns in the dialogue when the text source changed so dramatically from a modern-day comedy to an 19th-century drama/romance.  Consequently, we decided to rerun the model using scripts from the entire fourth season of *The Office.'  At last, we were able to generate several plausible and understandable scripts.  We are now currently in the process of selecting which of these scripts we would like to present in class on Monday.
