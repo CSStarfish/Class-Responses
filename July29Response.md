@@ -13,7 +13,7 @@
 | PBS         | 1.1247207e-07        | 9.9144883e-05        | 8.3452953e-08        | 9.9997294e-01        | 9.9573344e-01        | ~0.4               |
 | The Onion   | 5.6049582e-03        | 6.9782567e-07        | 4.8915293e-08        | 9.9894577e-01        | 1.4838601e-04        | ~0.2               |
 
-
+---
 
 
 | News Source | Article 1 Headline                                                                                | Article 2 Headline                                                           | Article 3 Headline                                                                   | Article 4 Headline                                                                         | Article 5 Headline                                                                                              |
@@ -111,7 +111,7 @@
   
 * Coincidentally, like the example from the TensorFlow link, the first two sentences I selected were correctly translated and the last sentence was incorrect.  The first sentence I used was "Me gustan galletas," which the program correctly translated to "I like cookies."  On a similar note related to sweets, I then used "También me gustan pasteles," which was also correctly translated to "I also like cake."  Lastly, I used "Me gusta tarta, pero no tanto como pasteles."  This should have translated to something similar to "I like pie, but not as much as cake."  However, it instead was very incorrectly translated to "I like life as big meat."  It was also quite interesting to see the attention plot created for this final sentecne, as it was longer than the other two or the example sentences from the TensorFlow article, so there was more activity that could be seen.  Considering there were more words in this sentence, it was reasonable to suspect that the model may accidentally mistranslate the sentence.  Consequently, it would be important to create a more robust model (potentially by adding additional layers to the neural network) before relying on it for translations in the real world.  
 
-![First Sentece](CookieAttention.png)
+![First Sentence](CookieAttention.png)
 
 ![Second Sentence](CakeAttention.png)
 
