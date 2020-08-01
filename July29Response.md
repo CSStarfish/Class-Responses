@@ -4,12 +4,16 @@
   
 * I decided to try out news titles from a range of political viewpoints, so I selected five titles each from MSNBC (more liberal), Fox News (more conservative), and PBS (more independent).  I then decided to try out another set of five titles from a satirical news source, The Onion, to see how accurate the model would be on titles I knew were meant to be sarcastic.  The model then predicted a floating point value between 0 and 1, with a number closer to 1 indicating that the article headline is sarcastic and a number closer to 0 indicating the article headline is factual.  The tables below display the results, as well as the corresponding headlines.  I thought it was really interesting to see that the model interpreted PBS as the most sarcastic news source, especially since The Onion is meant to be a sarcastic news source and PBS seems to be the most neutral of the real news sources I selected.  I also thought it was really interesting that the model interpreted The Onion to be just as sarcastic as MSNBC and Fox News.  In fact, the model didn't even think that articles from The Onion were really sarcastic at all, as its average prediction score was less than 0.5, at approximately 0.2.
 
+
+
 | News Source | Article 1 Prediction | Article 2 Prediction | Article 3 Prediction | Article 4 Prediction | Article 5 Prediction | Average Prediction |
 |-------------|----------------------|----------------------|----------------------|----------------------|----------------------|--------------------|
 | MSNBC       | 7.3306270e-02        | 1.8061158e-08        | 8.1769675e-09        | 1.1707650e-08        | 9.9954504e-01        | ~0.2               |
 | Fox News    | 8.1891455e-03        | 3.4978326e-05        | 9.4889343e-01        | 2.0328040e-04        | 2.0152463e-06        | ~0.2               |
 | PBS         | 1.1247207e-07        | 9.9144883e-05        | 8.3452953e-08        | 9.9997294e-01        | 9.9573344e-01        | ~0.4               |
 | The Onion   | 5.6049582e-03        | 6.9782567e-07        | 4.8915293e-08        | 9.9894577e-01        | 1.4838601e-04        | ~0.2               |
+
+
 
 
 | News Source | Article 1 Headline                                                                                | Article 2 Headline                                                           | Article 3 Headline                                                                   | Article 4 Headline                                                                         | Article 5 Headline                                                                                              |
