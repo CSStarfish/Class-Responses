@@ -18,6 +18,7 @@
 15. [July 28, Response](https://csstarfish.github.io/Machine-Learning/July28Response)
 16. [July 29, Response](https://csstarfish.github.io/Machine-Learning/July29Response)
 17. [Project 4, Response](https://csstarfish.github.io/Machine-Learning/Project4Response)
+18. [Final Project, Response](https://csstarfish.github.io/Machine-Learning/FinalProjectResponse)
 
 
 
