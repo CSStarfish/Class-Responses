@@ -24,4 +24,4 @@
 
   In previous research from the NIH ([NIH article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7037130/)), adding physical hardware (like sensors that record the person’s heart rate and brainwave activity) can also enhance the ability to predict one’s emotional state.  However, this would be infeasible and invasive to impose on the population, so it would be impractical to include with this model.
 
-[Powerpoint/Poster](https://csstarfish.github.io/Machine-Learning/FaceIt)
+![Powerpoint/Poster](https://csstarfish.github.io/Machine-Learning/FaceIt.pdf)
