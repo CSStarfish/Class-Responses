@@ -2,7 +2,8 @@
 
 ## Using A Convolutional Neural Network (CNN) To Read Emotions From Facial Expressions
 
-***To view my PowerPoint and project poster: [Powerpoint/Poster](https://1drv.ms/p/s!ArdBU2HquK4Hgf9xvHvffNiESA4P-A?e=fGcZuV)***
+***To view my PowerPoint and project poster: [Powerpoint/Poster (PPT format)](https://1drv.ms/p/s!ArdBU2HquK4Hgf9xvHvffNiESA4P-A?e=fGcZuV)***
+					  ***[Powerpoint/Poster (PDF format)](FaceIt.pdf)***
 
   There are two main methods of communicating – verbally and nonverbally.  The nonverbal methods of communication involve visual cues like body language and facial expressions.  In a study conducted in the mid-20th century by UCLA Professor Emeritus of Psychology, Albert Mehrabian, it was discovered that a majority of the meaning imparted by someone’s message is gleaned from the nonverbal means of communicating.  Mehrabian is credited with the 7-38-55% rule, which states that listeners derive just 7% of the meaning behind what someone says comes from the actual words they say and only 38% of the meaning comes from the way those words are said, like the person’s tone of voice.  However, over half (55%) comes from the non-verbal, visual cues that are displayed as they speak, like facial expression.  
 	
@@ -24,4 +25,3 @@
 
   In previous research from the NIH ([NIH article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7037130/)), adding physical hardware (like sensors that record the person’s heart rate and brainwave activity) can also enhance the ability to predict one’s emotional state.  However, this would be infeasible and invasive to impose on the population, so it would be impractical to include with this model.
 
-![Powerpoint/Poster](https://csstarfish.github.io/Machine-Learning/FaceIt.pdf)
